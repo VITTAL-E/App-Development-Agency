@@ -1,0 +1,1259 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><svg class="inline-defs-container" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"></svg><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": {
+  "on-secondary": "var(--color-on-secondary)",
+  "on-primary-fixed-variant": "var(--color-on-primary-fixed-variant)",
+  "on-primary-container": "var(--color-on-primary-container)",
+  "surface-bright": "var(--color-surface-bright)",
+  "error-container": "var(--color-error-container)",
+  "background": "var(--color-background)",
+  "inverse-on-surface": "var(--color-inverse-on-surface)",
+  "on-secondary-fixed": "var(--color-on-secondary-fixed)",
+  "on-surface": "var(--color-on-surface)",
+  "tertiary": "var(--color-tertiary)",
+  "on-secondary-fixed-variant": "var(--color-on-secondary-fixed-variant)",
+  "tertiary-fixed-dim": "var(--color-tertiary-fixed-dim)",
+  "tertiary-container": "var(--color-tertiary-container)",
+  "surface-container-low": "var(--color-surface-container-low)",
+  "secondary-fixed": "var(--color-secondary-fixed)",
+  "secondary-container": "var(--color-secondary-container)",
+  "surface-container-high": "var(--color-surface-container-high)",
+  "on-tertiary-fixed": "var(--color-on-tertiary-fixed)",
+  "on-error": "var(--color-on-error)",
+  "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+  "on-background": "var(--color-on-background)",
+  "surface-dim": "var(--color-surface-dim)",
+  "on-tertiary-fixed-variant": "var(--color-on-tertiary-fixed-variant)",
+  "primary-fixed": "var(--color-primary-fixed)",
+  "on-primary": "var(--color-on-primary)",
+  "outline": "var(--color-outline)",
+  "surface-container-lowest": "var(--color-surface-container-lowest)",
+  "on-surface-variant": "var(--color-on-surface-variant)",
+  "surface-variant": "var(--color-surface-variant)",
+  "on-primary-fixed": "var(--color-on-primary-fixed)",
+  "primary": "var(--color-primary)",
+  "surface-container-highest": "var(--color-surface-container-highest)",
+  "secondary": "var(--color-secondary)",
+  "tertiary-fixed": "var(--color-tertiary-fixed)",
+  "surface": "var(--color-surface)",
+  "inverse-primary": "var(--color-inverse-primary)",
+  "on-tertiary": "var(--color-on-tertiary)",
+  "error": "var(--color-error)",
+  "inverse-surface": "var(--color-inverse-surface)",
+  "on-secondary-container": "var(--color-on-secondary-container)",
+  "on-error-container": "var(--color-on-error-container)",
+  "surface-container": "var(--color-surface-container)",
+  "surface-tint": "var(--color-surface-tint)",
+  "secondary-fixed-dim": "var(--color-secondary-fixed-dim)",
+  "primary-container": "var(--color-primary-container)",
+  "outline-variant": "var(--color-outline-variant)",
+  "on-tertiary-container": "var(--color-on-tertiary-container)"
+}, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-sm": "0.5rem", "gutter-sm": "1rem", "gutter-lg": "2rem", "space-xl": "2.5rem", "margin": "1.5rem", "margin-lg": "5rem", "margin-md": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "display-xl-mobile": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "body-sm": [ "Inter" ], "headline-lg": [ "Plus Jakarta Sans" ], "label-code": [ "JetBrains Mono" ], "label-caps": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "display-xl": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "title-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "display-xl-mobile": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-code": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "display-xl": [ "64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "title-sm": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ] } } } };</script>  
+<link rel="icon" href="favicon.png" type="image/png"><link rel="apple-touch-icon" href="favicon.png"></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)]"><div class="h-20 max-w-[1440px] mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><a class="group flex items-center gap-3 relative" href="index.html"><div class="relative flex items-center justify-center"><div class="absolute -inset-1 rounded-full bg-primary/20 blur-md group-hover:bg-primary/40 transition-all"></div><div class="w-9 h-9 relative z-10"><img alt="ApexLabs Logo" class="w-full h-full object-contain rounded-xl" src="favicon.png"></div></div><span class="font-title-sm text-title-sm text-on-surface tracking-tight flex items-center gap-1.5">Apex <span class="text-primary">Labs</span><span class="font-label-code text-label-code px-1.5 py-0.5 rounded bg-surface-container-high text-primary border border-primary/30">v3.2</span></span></a></div><nav class="hidden xl:flex items-center gap-space-xs p-1 rounded-lg bg-surface-container-lowest/60 border border-outline-variant/20"><div class="relative group"><button type="button" class="flex items-center gap-1 px-3 py-2 rounded transition-all bg-surface-container-high text-primary font-semibold shadow-[0_0_16px_rgba(6,182,212,0.2)] border border-primary/30" aria-haspopup="true"><span>Home</span><span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">expand_more</span></button><div class="absolute left-0 top-full w-64 hidden group-hover:block z-[100]"><div class="mt-1 rounded-xl bg-surface-container border border-outline-variant/40 shadow-2xl p-2 flex flex-col gap-1"><a class="flex flex-col p-2.5 rounded-lg bg-surface-container-low transition-all text-left" href="index.html"><span class="font-semibold text-[13px] text-primary flex items-center justify-between">Home 1: App Development Agency<span class="material-symbols-outlined text-[14px]">arrow_forward</span></span><span class="text-[11px] text-on-surface-variant mt-0.5">Flagship agency engineering</span></a><a class="flex flex-col p-2.5 rounded-lg hover:bg-surface-container-high transition-all text-left" href="home-2.html"><span class="font-semibold text-[13px] text-on-surface flex items-center justify-between">Home 2: Startup &amp; MVP Studio<span class="material-symbols-outlined text-[14px]">arrow_forward</span></span><span class="text-[11px] text-on-surface-variant mt-0.5">Rapid venture MVP delivery</span></a></div></div></div><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent transition-all" href="services.html">Services</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent transition-all" href="portfolio.html">Portfolio</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent transition-all" href="process.html">Process</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent transition-all" href="pricing.html">Pricing</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent transition-all" href="blog.html">Blog</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent transition-all" href="contact.html">Contact</a></nav><div class="flex items-center gap-space-sm"><button aria-label="Toggle color mode" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 flex items-center justify-center transition-all" type="button"><span class="material-symbols-outlined text-[18px]">dark_mode</span></button><button aria-label="Toggle RTL mode" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 flex items-center justify-center transition-all" type="button" title="Toggle RTL"><span class="material-symbols-outlined text-[18px]">language</span></button><a class="hidden sm:flex items-center gap-1.5 px-3.5 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#">Client Portal</a><a class="inline-flex items-center justify-center px-4 py-2 rounded-lg font-title-sm text-body-sm bg-primary-container text-surface-container-lowest font-semibold shadow-[0_0_24px_rgba(6,182,212,0.35)] hover:bg-primary transition-all duration-200" href="#">Start a Project</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(76,215,246,0.4)] ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full text-on-surface">
+<!-- ================= SECTION 1: HERO (Understand) ================= -->
+<section class="relative w-full overflow-hidden pb-space-xl pt-space-lg lg:pb-32 lg:pt-16 border-b border-outline-variant/20"><div class="pointer-events-none absolute -top-40 left-1/2 h-[540px] w-[900px] -translate-x-1/2 rounded-full bg-gradient-to-tr from-primary-container/20 via-secondary-container/25 to-transparent blur-[140px]"></div><div class="pointer-events-none absolute top-1/3 -right-40 h-[420px] w-[500px] rounded-full bg-primary/10 blur-[120px]"></div><div class="relative mx-auto max-w-[1440px] px-margin lg:px-margin-lg"><div class="grid grid-cols-1 items-center gap-gutter-lg lg:grid-cols-12"><div class="flex flex-col items-start lg:col-span-6"><div class="inline-flex items-center gap-2 rounded-full bg-surface-container-low px-3 py-1 shadow-sm border border-outline-variant/30"><span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-tertiary"></span></span><span class="font-label-code text-label-code text-on-surface">ApexLabs Studio • Q2 Build Queue Open</span><span class="font-label-caps text-label-caps rounded bg-primary/15 px-1.5 py-0.5 text-primary font-bold">v3.2 ARCH</span></div><h1 class="mt-space-md font-display-xl text-headline-lg lg:text-display-xl font-extrabold tracking-tight text-on-surface leading-tight">Architecting <span class="bg-gradient-to-r from-primary via-primary-fixed to-secondary bg-clip-text text-transparent">Next-Gen</span> Mobile Apps for Global Scale.</h1><p class="mt-space-md max-w-xl font-body-lg text-body-lg text-on-surface-variant">We engineer mission-critical iOS, Android, and cross-platform native ecosystems for high-growth ventures and Fortune 500 flagships. Zero technical compromises, 60fps fluidity, and sub-second cold starts.</p><div class="mt-space-lg flex flex-wrap items-center gap-space-md"><a class="group inline-flex items-center gap-2 rounded-lg bg-primary-container px-6 py-3.5 font-title-sm text-body-md font-semibold text-surface-container-lowest shadow-[0_0_28px_rgba(6,182,212,0.4)] transition-all duration-200 hover:bg-primary hover:shadow-[0_0_36px_rgba(76,215,246,0.6)]" href="#case-studies"><span class="">Explore Case Studies</span><span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span></a><a class="inline-flex items-center gap-2 rounded-lg bg-surface-container-low px-6 py-3.5 font-title-sm text-body-md font-semibold text-on-surface shadow-sm backdrop-blur-md transition-all duration-200 hover:bg-surface-container-high hover:text-primary border border-outline-variant/30" href="#discovery-session"><span class="material-symbols-outlined text-[18px] text-primary">terminal</span><span class="">Schedule Architecture Review</span></a></div><div class="mt-space-xl grid grid-cols-3 gap-space-md pt-space-md w-full border-t border-outline-variant/30"><div class="bg-surface-container-lowest/60 p-3 rounded-xl border border-outline-variant/20"><div class="font-headline-md text-headline-md font-bold text-on-surface">99.98%</div><div class="font-label-code text-label-code text-on-surface-variant mt-0.5">Crash-Free Sessions</div></div><div class="bg-surface-container-lowest/60 p-3 rounded-xl border border-outline-variant/20"><div class="font-headline-md text-headline-md font-bold text-primary">&lt;14ms</div><div class="font-label-code text-label-code text-on-surface-variant mt-0.5">P99 Input Latency</div></div><div class="bg-surface-container-lowest/60 p-3 rounded-xl border border-outline-variant/20"><div class="font-headline-md text-headline-md font-bold text-tertiary">$6.8B+</div><div class="font-label-code text-label-code text-on-surface-variant mt-0.5">Mobile Tx Processed</div></div></div></div><div class="relative lg:col-span-6"><div class="relative mx-auto w-full max-w-[580px]"><div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-primary/30 via-secondary-container/30 to-primary-container/30 blur-2xl"></div><div class="relative rounded-2xl bg-surface-container-lowest/90 p-4 shadow-2xl backdrop-blur-xl border border-primary/30"><div class="flex items-center justify-between rounded-xl bg-surface-container-low p-2 border border-outline-variant/30"><div class="flex items-center gap-1.5"><span class="h-2.5 w-2.5 rounded-full bg-error/80 inline-block"></span><span class="h-2.5 w-2.5 rounded-full bg-secondary/80 inline-block"></span><span class="h-2.5 w-2.5 rounded-full bg-tertiary/80 inline-block"></span><span class="font-label-code text-[11px] text-on-surface-variant ml-2">terminal://apexlabs-cockpit-v3.2</span></div><div class="flex items-center gap-2"><span class="inline-block h-2 w-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-code text-label-code font-bold text-tertiary">120 FPS</span></div></div><div class="mt-3 flex items-center gap-1.5 flex-wrap"><span class="px-2.5 py-1 rounded bg-primary/15 text-primary border border-primary/30 font-label-code text-[11px] font-semibold">iOS Swift UI</span><span class="px-2.5 py-1 rounded bg-tertiary/15 text-tertiary border border-tertiary/30 font-label-code text-[11px] font-semibold">Android Compose</span><span class="px-2.5 py-1 rounded bg-secondary/15 text-secondary border border-secondary/30 font-label-code text-[11px] font-semibold">Flutter / RN</span><span class="ml-auto px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-code text-[11px] flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[14px]">bolt</span> Metal 3 Shaders</span></div><div class="mt-3 relative overflow-hidden rounded-xl bg-surface-container border border-primary/30 shadow-[0_0_24px_rgba(6,182,212,0.25)] group"><div class="relative h-[320px] w-full overflow-hidden"><img alt="Futuristic high-tech mobile software engineering hero visual with glowing 3D holographic smartphone mockups and code interfaces" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WgOaBL6kJ_K42ORrvqII5a3TzfwO9cVeA7st1TQTK8skeQ2S_WZBPe0tWiO52TnGaqCZWPAbZ-UA6snxUqVscVfRiuzOzOcSohonJTgJSgevtHSg1DuR7w0II2-sZPIIahPNqvw2LuIQzl115vywN-95qgHDqlfVRMWZeI9jfAOnZ_jI5A7CIYHGHpWNPbCF7WTc58ZdDK-w4nPJtQjZO7tmox_PvvOXaohgikU4C8Nun-nT2if4tN5kAZ"><div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-surface-container-lowest/20"></div><div class="absolute top-3 left-3 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 border border-primary/30 flex items-center gap-2 shadow-lg"><span class="material-symbols-outlined text-primary text-[16px]">terminal</span><span class="font-label-code text-[11px] text-on-surface font-semibold">Apex Liquidity Core • Swift 6.0</span></div><div class="absolute top-3 right-3 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md px-2 py-1 border border-tertiary/30 flex items-center gap-1.5 shadow-lg"><span class="h-1.5 w-1.5 rounded-full bg-tertiary animate-ping"></span><span class="font-label-code text-[10px] text-tertiary font-bold">HARDWARE ENCLAVE OK</span></div><div class="absolute bottom-3 left-3 right-3 flex items-center justify-between rounded-lg bg-surface-container-lowest/90 backdrop-blur-md p-2.5 border border-outline-variant/30"><div class="flex items-center gap-3"><div class="font-label-code text-[11px]"><span class="text-on-surface-variant block text-[9px] uppercase">Live Pipeline</span><span class="text-primary font-bold">P2P v4 Active</span></div><div class="h-5 w-px bg-outline-variant/30"></div><div class="font-label-code text-[11px]"><span class="text-on-surface-variant block text-[9px] uppercase">Latency Target</span><span class="text-tertiary font-bold">&lt;8.2ms Input</span></div></div><span class="font-label-code text-[11px] text-on-surface-variant">A18 Pro Engine</span></div></div></div><div class="mt-3 flex items-center justify-between px-2 font-label-code text-[11px] text-on-surface-variant"><span class="">SIMULATOR: iPhone 16 Pro Max • iOS 18.2</span><span class="text-primary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">check_circle</span> Zero-Crash Runtime Guaranteed</span></div></div></div></div></div><div class="mt-space-xl pt-space-lg"><p class="text-center font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Trusted by tier-1 innovators &amp; enterprise leaders worldwide</p><div class="mt-6 flex flex-wrap items-center justify-center gap-8 lg:gap-14 opacity-75"><div class="flex items-center gap-2 font-title-sm font-bold text-on-surface tracking-wider"><span class="h-3 w-3 rounded-full bg-primary"></span> Stripe Ecosystem</div><div class="flex items-center gap-2 font-title-sm font-bold text-on-surface tracking-wider"><span class="h-3 w-3 rounded-full bg-secondary"></span> REVOLUT PARTNER</div><div class="flex items-center gap-2 font-title-sm font-bold text-on-surface tracking-wider"><span class="material-symbols-outlined text-primary text-[20px]">layers</span> LINEAR INTEGRATED</div><div class="flex items-center gap-2 font-title-sm font-bold text-on-surface tracking-wider"><span class="h-3 w-3 rounded-full bg-tertiary"></span> BREX ENTERPRISE</div><div class="flex items-center gap-2 font-title-sm font-bold text-on-surface tracking-wider"><span class="material-symbols-outlined text-secondary text-[20px]">bolt</span> RAMP FINANCIAL</div><div class="flex items-center gap-2 font-title-sm font-bold text-on-surface tracking-wider"><span class="material-symbols-outlined text-primary text-[20px]">change_history</span> VERCEL MOBILE</div></div></div></div></section>
+<!-- ================= SECTION 2: PLATFORM MATRIX & CAPABILITIES (Explore) ================= -->
+<section class="relative w-full bg-surface-container-lowest/50 py-space-xl lg:py-28" id="services-matrix">
+<div class="mx-auto max-w-[1440px] px-margin lg:px-margin-lg">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 rounded-full bg-surface-container-high px-3 py-1 font-label-caps text-label-caps uppercase text-primary">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+          Engineering Specializations
+        </div>
+<h2 class="mt-space-sm font-headline-lg text-headline-lg lg:text-[40px] font-extrabold text-on-surface">
+          Precision Engineering Across Every Mobile Touchpoint
+        </h2>
+<p class="mt-space-xs max-w-2xl font-body-md text-body-md text-on-surface-variant">
+          We don't build generic brochure apps. We build hyper-optimized digital hardware interfaces, low-latency microsecond rendering pipelines, and fault-tolerant distributed edge systems.
+        </p>
+</div>
+<!-- 4 Core Capability Cards Bento -->
+<div class="mt-space-xl grid grid-cols-1 gap-gutter md:grid-cols-2 lg:grid-cols-4">
+<!-- Card 1: iOS -->
+<div class="group relative flex flex-col justify-between rounded-xl bg-surface-container-low p-space-lg transition-all duration-300 hover:bg-surface-container hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]">
+<div>
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-container/20 text-primary">
+<span class="material-symbols-outlined text-[28px]">phone_iphone</span>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<h3 class="font-headline-md text-title-sm font-bold text-on-surface">Native iOS Excellence</h3>
+<span class="font-label-code text-[11px] text-primary">Swift 6.0</span>
+</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+              Bare-metal iOS mastery using Modern Swift Concurrency, SwiftUI declarative state, Metal 3 computational shaders, Dynamic Island integration, and seamless watchOS/visionOS extensions.
+            </p>
+<!-- Benchmarks -->
+<div class="mt-space-md space-y-2 rounded-lg bg-surface-container-lowest p-2.5">
+<div class="flex justify-between font-label-code text-[11px]">
+<span class="text-on-surface-variant">Frame Rate Target:</span>
+<span class="font-semibold text-tertiary">120 Hz ProMotion</span>
+</div>
+<div class="flex justify-between font-label-code text-[11px]">
+<span class="text-on-surface-variant">Input-to-Render Latency:</span>
+<span class="font-semibold text-primary">&lt;8.2 ms</span>
+</div>
+</div>
+</div>
+<!-- Tech Tags & Drawer -->
+<div class="mt-space-md pt-space-xs">
+<div class="flex flex-wrap gap-1.5">
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">CoreML</span>
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">Widgets</span>
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">StoreKit 2</span>
+</div>
+<button class="mt-space-sm flex w-full items-center justify-between font-title-sm text-body-sm text-primary hover:underline" onclick="toggleTechDrawer('drawer-ios')" type="button">
+<span class="">View Architectural Specs</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<div class="hidden mt-2 font-label-code text-[11px] text-on-surface-variant bg-surface-container-highest p-2 rounded" id="drawer-ios">
+              Actors &amp; TaskGroups • SwiftData &amp; GRDB • Combine/AsyncSequence • Custom CoreGraphics Layer
+            </div>
+</div>
+</div>
+<!-- Card 2: Android -->
+<div class="group relative flex flex-col justify-between rounded-xl bg-surface-container-low p-space-lg transition-all duration-300 hover:bg-surface-container hover:shadow-[0_0_30px_rgba(78,222,163,0.15)]">
+<div>
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-tertiary/20 text-tertiary">
+<span class="material-symbols-outlined text-[28px]">android</span>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<h3 class="font-headline-md text-title-sm font-bold text-on-surface">Native Android Power</h3>
+<span class="font-label-code text-[11px] text-tertiary">Compose 1.7</span>
+</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+              Industrial Android solutions powered by Jetpack Compose, Kotlin Multiplatform (KMP), Coroutines, Hilt/Koin DI, and device integration across Android Auto, WearOS, and rugged warehouse hardware.
+            </p>
+<div class="mt-space-md space-y-2 rounded-lg bg-surface-container-lowest p-2.5">
+<div class="flex justify-between font-label-code text-[11px]">
+<span class="text-on-surface-variant">Startup Optimization:</span>
+<span class="font-semibold text-tertiary">Baseline Profiles</span>
+</div>
+<div class="flex justify-between font-label-code text-[11px]">
+<span class="text-on-surface-variant">Crash-Free Benchmark:</span>
+<span class="font-semibold text-primary">99.98% P99</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs">
+<div class="flex flex-wrap gap-1.5">
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">Room DB</span>
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">CameraX</span>
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">KMP Logic</span>
+</div>
+<button class="mt-space-sm flex w-full items-center justify-between font-title-sm text-body-sm text-tertiary hover:underline" onclick="toggleTechDrawer('drawer-android')" type="button">
+<span class="">View Architectural Specs</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<div class="hidden mt-2 font-label-code text-[11px] text-on-surface-variant bg-surface-container-highest p-2 rounded" id="drawer-android">
+              Koin / Dagger-Hilt • Android NDK C++ Hooks • WorkManager Background Task Daemon • Retrofit/Moshi
+            </div>
+</div>
+</div>
+<!-- Card 3: Hybrid / Cross-Platform -->
+<div class="group relative flex flex-col justify-between rounded-xl bg-surface-container-low p-space-lg transition-all duration-300 hover:bg-surface-container hover:shadow-[0_0_30px_rgba(208,188,255,0.15)]">
+<div>
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/20 text-secondary">
+<span class="material-symbols-outlined text-[28px]">hub</span>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<h3 class="font-headline-md text-title-sm font-bold text-on-surface">Cross-Platform Scale</h3>
+<span class="font-label-code text-[11px] text-secondary">Flutter &amp; RN</span>
+</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+              Single-codebase deployment without velocity penalty. React Native with New Architecture (Fabric + TurboModules) or Flutter 3.24 with custom Impeller / Skia rendering engine integration.
+            </p>
+<div class="mt-space-md space-y-2 rounded-lg bg-surface-container-lowest p-2.5">
+<div class="flex justify-between font-label-code text-[11px]">
+<span class="text-on-surface-variant">Code Reusability:</span>
+<span class="font-semibold text-secondary">88% Shared Core</span>
+</div>
+<div class="flex justify-between font-label-code text-[11px]">
+<span class="text-on-surface-variant">JSI Bridge Overhead:</span>
+<span class="font-semibold text-primary">0ms C++ Zero-Copy</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs">
+<div class="flex flex-wrap gap-1.5">
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">Fabric JSI</span>
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">Impeller</span>
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">Skia 2D</span>
+</div>
+<button class="mt-space-sm flex w-full items-center justify-between font-title-sm text-body-sm text-secondary hover:underline" onclick="toggleTechDrawer('drawer-cross')" type="button">
+<span class="">View Architectural Specs</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<div class="hidden mt-2 font-label-code text-[11px] text-on-surface-variant bg-surface-container-highest p-2 rounded" id="drawer-cross">
+              Hermes Engine Tuned • Custom C++ JSI Bindings • Dart AOT Compilation • Native Platform Channels
+            </div>
+</div>
+</div>
+<!-- Card 4: AI & Edge Sync -->
+<div class="group relative flex flex-col justify-between rounded-xl bg-surface-container-low p-space-lg transition-all duration-300 hover:bg-surface-container hover:shadow-[0_0_30px_rgba(6,182,212,0.25)]">
+<div>
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-container/30 text-primary-fixed">
+<span class="material-symbols-outlined text-[28px]">psychology</span>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<h3 class="font-headline-md text-title-sm font-bold text-on-surface">On-Device AI &amp; Sync</h3>
+<span class="font-label-code text-[11px] text-primary-fixed">CoreML &amp; LLM</span>
+</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+              Quantized LLMs &amp; vision models embedded straight on Apple Neural Engine and Snapdragon NPU. Zero-cloud cloud latency, military-grade client privacy, and CRDT-driven offline databases.
+            </p>
+<div class="mt-space-md space-y-2 rounded-lg bg-surface-container-lowest p-2.5">
+<div class="flex justify-between font-label-code text-[11px]">
+<span class="text-on-surface-variant">Local Inference:</span>
+<span class="font-semibold text-tertiary">38 tokens/sec</span>
+</div>
+<div class="flex justify-between font-label-code text-[11px]">
+<span class="text-on-surface-variant">Offline Conflict Resolution:</span>
+<span class="font-semibold text-primary">Yjs CRDT Automerge</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs">
+<div class="flex flex-wrap gap-1.5">
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">Llama.cpp</span>
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">ANE Quant</span>
+<span class="rounded bg-surface-container px-2 py-0.5 font-label-code text-[10px] text-on-surface">CRDT Sync</span>
+</div>
+<button class="mt-space-sm flex w-full items-center justify-between font-title-sm text-body-sm text-primary hover:underline" onclick="toggleTechDrawer('drawer-ai')" type="button">
+<span class="">View Architectural Specs</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<div class="hidden mt-2 font-label-code text-[11px] text-on-surface-variant bg-surface-container-highest p-2 rounded" id="drawer-ai">
+              CoreML Quantization (INT4/FP16) • ONNX Runtime Mobile • ElectricSQL / Supabase Realtime • BLE Mesh
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 3: FEATURED CASE STUDIES & METRICS (Explore & Trust) ================= -->
+<section class="relative w-full py-space-xl lg:py-28" id="case-studies">
+<div class="mx-auto max-w-[1440px] px-margin lg:px-margin-lg">
+<!-- Section Header with Category Tabs -->
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-space-md">
+<div>
+<div class="inline-flex items-center gap-2 rounded-full bg-surface-container-high px-3 py-1 font-label-caps text-label-caps uppercase text-primary">
+<span class="material-symbols-outlined text-[14px]">rocket_launch</span>
+            Production Shipments
+          </div>
+<h2 class="mt-space-sm font-headline-lg text-headline-lg lg:text-[40px] font-extrabold text-on-surface">
+            Shipment Showcase — Real Metrics from Apps in Production
+          </h2>
+<p class="mt-space-xs max-w-xl font-body-md text-body-md text-on-surface-variant">
+            Explore audited case studies across high-throughput fintech, life-critical medical telehealth, and enterprise logistics networks.
+          </p>
+</div>
+<!-- Filter Buttons -->
+<div class="flex flex-wrap items-center gap-2 rounded-xl bg-surface-container-low p-1.5 shadow-sm" id="case-study-filters">
+<button class="cs-filter-btn active-filter rounded-lg bg-surface-container-high px-4 py-1.5 font-label-code text-label-code text-primary shadow-sm transition-all" data-filter="all" type="button">All</button>
+<button class="cs-filter-btn rounded-lg px-4 py-1.5 font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-all" data-filter="fintech" type="button">FinTech</button>
+<button class="cs-filter-btn rounded-lg px-4 py-1.5 font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-all" data-filter="healthtech" type="button">HealthTech</button>
+<button class="cs-filter-btn rounded-lg px-4 py-1.5 font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-all" data-filter="logistics" type="button">Logistics</button>
+<button class="cs-filter-btn rounded-lg px-4 py-1.5 font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-all" data-filter="ai" type="button">On-Device AI</button>
+</div>
+</div>
+<!-- Projects Grid -->
+<div class="mt-space-xl grid grid-cols-1 gap-gutter-lg lg:grid-cols-3" id="case-studies-container">
+<!-- Project 1: FinTech Kinetix Vault -->
+<div class="case-study-card group relative flex flex-col overflow-hidden rounded-2xl bg-surface-container-low shadow-lg transition-all duration-300 hover:shadow-[0_0_32px_rgba(6,182,212,0.2)]" data-category="fintech">
+<!-- Visual Bezel Render -->
+<div class="relative h-64 w-full overflow-hidden bg-surface-container-highest/60 p-4">
+<img class="h-full w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High fidelity dark mobile banking application screen mockup showing biometric facial recognition scan with cryptographic vault authentication graphic, cyan glowing circuit diagrams on dark slate glass background, clean typography and asset portfolio analytics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2efschVz4Pvf2i4y9chMBPwfoXcQUBdBpDF6K_9LCWuO8i5TFNZWP5WkciqWu80COnPM4eVVUEd9RIoP6cDm36HuyedP0Y2DaaSgEz-V4rItrPYWMv31l-Zhkya5gtOhjOkL0RoyUA28OHaQ65v-QAoE9ncemcibyYreqI5cs8Qi52npcmuJhPL3LIvy4ifDgRHZ94x5z7hvZmxKbwLw9mKeB8KbxJ99llccIjCZfjQEtBesQnJckWQ">
+<div class="absolute top-6 left-6 rounded-lg bg-surface-container-lowest/80 px-2.5 py-1 font-label-code text-label-code text-primary backdrop-blur-md">
+              iOS Native (SwiftUI)
+            </div>
+<div class="absolute bottom-6 right-6 rounded-lg bg-surface-container-lowest/80 px-2.5 py-1 font-label-code text-label-code text-tertiary backdrop-blur-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">star</span> 4.9 App Store
+            </div>
+</div>
+<!-- Content Body -->
+<div class="flex flex-1 flex-col justify-between p-space-lg">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-primary">Cryptographic Vault &amp; Banking</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Tier-1 Challenger</span>
+</div>
+<h3 class="mt-space-xs font-headline-md text-headline-md font-bold text-on-surface">Kinetix Vault Mobile</h3>
+<p class="mt-space-sm font-body-sm text-body-sm text-on-surface-variant">
+                Engineered the core consumer banking client from ground up with hardware Secure Enclave integration, sub-second biometric passkey signing, and zero-trust transaction signing.
+              </p>
+<!-- Metrics Strip -->
+<div class="mt-space-md grid grid-cols-2 gap-2 rounded-lg bg-surface-container p-3">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-primary">$4.2B+</div>
+<div class="font-label-code text-[11px] text-on-surface-variant">Quarterly Tx Volume</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md font-bold text-tertiary">0.4s</div>
+<div class="font-label-code text-[11px] text-on-surface-variant">Biometric Cold Unlock</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg flex items-center justify-between pt-space-xs">
+<span class="font-label-code text-label-code text-on-surface-variant">Stack: Swift 6, CoreGraphics, HSM</span>
+<button class="inline-flex items-center gap-1 font-title-sm text-body-sm font-semibold text-primary hover:underline" onclick="openDeepDiveModal('kinetix')" type="button">
+<span class="">Read Deep Dive</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Project 2: AuraHealth Pro (HealthTech) -->
+<div class="case-study-card group relative flex flex-col overflow-hidden rounded-2xl bg-surface-container-low shadow-lg transition-all duration-300 hover:shadow-[0_0_32px_rgba(78,222,163,0.2)]" data-category="healthtech">
+<div class="relative h-64 w-full overflow-hidden bg-surface-container-highest/60 p-4">
+<img class="h-full w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High tech medical mobile telemetry user interface showing real-time ECG waveform graph, patient vital signs, blood oxygen sensor reading, Bluetooth Low Energy sync connection status indicator, deep dark clinical aesthetic with neon teal highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMM7T8B2ivk8IKadLtIaIcWVt3JhF7gEAiZUFHFw9VC5pKnc_8Hh5K281zUQaQqxmXoB9em6GKmjiu1lrwbowICK_7vFjQDiDg3eDhVsYK4cOsWC_XwS66xfSZurE4jgKqxPfGYM_jtdwelvv4hcpopRFUdh6IDXmYJ7zDrllvqy5Z2DVv_jKRYb1bnJNm3hN2SkbzXrUGMkhnZozVIAJj6xUE9BmPCtznZf4hVQA8zrJl78H6ktFKGQ">
+<div class="absolute top-6 left-6 rounded-lg bg-surface-container-lowest/80 px-2.5 py-1 font-label-code text-label-code text-tertiary backdrop-blur-md">
+              Kotlin Multiplatform + iOS
+            </div>
+<div class="absolute bottom-6 right-6 rounded-lg bg-surface-container-lowest/80 px-2.5 py-1 font-label-code text-label-code text-primary backdrop-blur-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> FDA Class II Ready
+            </div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-space-lg">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-tertiary">Clinical Telemetry &amp; IoT</span>
+<span class="font-label-code text-label-code text-on-surface-variant">HealthTech Enterprise</span>
+</div>
+<h3 class="mt-space-xs font-headline-md text-headline-md font-bold text-on-surface">AuraHealth Pro Telemetry</h3>
+<p class="mt-space-sm font-body-sm text-body-sm text-on-surface-variant">
+                Full rewrite of medical BLE device bridge for continuous cardiac telemetry monitoring, with HIPAA end-to-end encrypted packet sync and zero data loss on intermittent networks.
+              </p>
+<!-- Metrics Strip -->
+<div class="mt-space-md grid grid-cols-2 gap-2 rounded-lg bg-surface-container p-3">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-tertiary">99.999%</div>
+<div class="font-label-code text-[11px] text-on-surface-variant">Sensor Packet Capture</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md font-bold text-primary">&lt;12ms</div>
+<div class="font-label-code text-[11px] text-on-surface-variant">BLE Waveform Jitter</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg flex items-center justify-between pt-space-xs">
+<span class="font-label-code text-label-code text-on-surface-variant">Stack: CoreBluetooth, KMP, SQLCipher</span>
+<button class="inline-flex items-center gap-1 font-title-sm text-body-sm font-semibold text-tertiary hover:underline" onclick="openDeepDiveModal('aurahealth')" type="button">
+<span class="">Read Deep Dive</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Project 3: VoltFleet Telematics (Logistics & AI) -->
+<div class="case-study-card group relative flex flex-col overflow-hidden rounded-2xl bg-surface-container-low shadow-lg transition-all duration-300 hover:shadow-[0_0_32px_rgba(208,188,255,0.2)]" data-category="logistics ai">
+<div class="relative h-64 w-full overflow-hidden bg-surface-container-highest/60 p-4">
+<img class="h-full w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Logistics driver dispatch fleet management tablet application screen showing vector interactive routing map with dynamic waypoints, vehicle telemetry diagnostics, offline vector map tiles, and predictive on-device AI arrival scheduling in dark futuristic UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcvSTsw0VgNLVLxn81LV4kgZeilVkCtirmOAMqq65irUwWJvlDi3e-UpYm7QOT-jRV2T4NOMGuI0rEV2J2DCzLerSXjTy3LIzhzBO02vchLwgKTITZ93jVLiNxBRs0hpo3PbL6w4lAvGu5l3Zl34U9OZn89_CIoypaWQDMlrTWNwNoakcx1MZolcPJvdFrn_13xuWzYYU1a9itzOBUF3dAr1zXgQdfOpU_x7L9qGYdkty_v8jBVL1_yg">
+<div class="absolute top-6 left-6 rounded-lg bg-surface-container-lowest/80 px-2.5 py-1 font-label-code text-label-code text-secondary backdrop-blur-md">
+              React Native + C++ Engine
+            </div>
+<div class="absolute bottom-6 right-6 rounded-lg bg-surface-container-lowest/80 px-2.5 py-1 font-label-code text-label-code text-tertiary backdrop-blur-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span> 48,000+ Drivers
+            </div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-space-lg">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Autonomous Fleet Routing</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Global Freight Tech</span>
+</div>
+<h3 class="mt-space-xs font-headline-md text-headline-md font-bold text-on-surface">VoltFleet Dispatch AI</h3>
+<p class="mt-space-sm font-body-sm text-body-sm text-on-surface-variant">
+                Offline-first driver suite supporting raster and vector offline map rendering, dead-reckoning GPS sensor fusion, and on-device dynamic route recalculation in deep tunnel blackouts.
+              </p>
+<!-- Metrics Strip -->
+<div class="mt-space-md grid grid-cols-2 gap-2 rounded-lg bg-surface-container p-3">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-secondary">100%</div>
+<div class="font-label-code text-[11px] text-on-surface-variant">Offline Navigation Uptime</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md font-bold text-tertiary">-34%</div>
+<div class="font-label-code text-[11px] text-on-surface-variant">Battery Consumption</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg flex items-center justify-between pt-space-xs">
+<span class="font-label-code text-label-code text-on-surface-variant">Stack: Mapbox Native, SQLite, CoreLocation</span>
+<button class="inline-flex items-center gap-1 font-title-sm text-body-sm font-semibold text-secondary hover:underline" onclick="openDeepDiveModal('voltfleet')" type="button">
+<span class="">Read Deep Dive</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hidden Deep Dive Modal Trigger Target -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-background/80 p-4 backdrop-blur-md" id="deep-dive-modal">
+<div class="relative w-full max-w-2xl rounded-2xl bg-surface-container p-space-xl shadow-2xl">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-3">
+<h4 class="font-headline-md text-headline-md font-bold text-on-surface" id="modal-title">Architectural Case Study</h4>
+<button class="rounded-lg bg-surface-container-high p-1 text-on-surface-variant hover:text-on-surface" onclick="closeDeepDiveModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="mt-space-md font-body-md text-body-md text-on-surface-variant space-y-3" id="modal-content">
+<!-- Injected via JS -->
+</div>
+<div class="mt-space-lg flex justify-end">
+<button class="rounded-lg bg-primary-container px-4 py-2 font-title-sm text-body-sm font-semibold text-surface-container-lowest" onclick="closeDeepDiveModal()" type="button">
+          Close Technical Review
+        </button>
+</div>
+</div>
+</div>
+<!-- ================= SECTION 4: INTERACTIVE COST & ARCHITECTURE ESTIMATOR (Decide) ================= -->
+<section class="relative w-full bg-surface-container-lowest/70 py-space-xl lg:py-28" id="estimator">
+<div class="mx-auto max-w-[1440px] px-margin lg:px-margin-lg">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 rounded-full bg-surface-container-high px-3 py-1 font-label-caps text-label-caps uppercase text-primary">
+<span class="material-symbols-outlined text-[14px]">calculate</span>
+          Predictable Velocity Matrix
+        </div>
+<h2 class="mt-space-sm font-headline-lg text-headline-lg lg:text-[40px] font-extrabold text-on-surface">
+          Estimate Your Mobile Build In Under 60 Seconds
+        </h2>
+<p class="mt-space-xs max-w-2xl font-body-md text-body-md text-on-surface-variant">
+          Transparent engineering scoping based on platform target, system complexity, compliance tiers, and specialized native hardware modules.
+        </p>
+</div>
+<!-- Estimator Calculator Widget Layout -->
+<div class="mt-space-xl grid grid-cols-1 gap-gutter-lg lg:grid-cols-12">
+<!-- Interactive Inputs Form (Left Col) -->
+<div class="rounded-2xl bg-surface-container-low p-space-lg lg:col-span-7 shadow-lg">
+<!-- Step 1: Select Platform -->
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-primary">Step 01 / Target Operating Systems</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Select One</span>
+</div>
+<div class="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4" id="estimator-platform-options">
+<button class="est-platform-btn active-est-option rounded-xl bg-surface-container-high p-3 text-left transition-all" data-label="iOS Native (SwiftUI)" data-multiplier="1.0" type="button">
+<span class="material-symbols-outlined text-primary text-[20px]">phone_iphone</span>
+<div class="mt-1 font-title-sm text-[13px] font-semibold text-on-surface">iOS Native</div>
+<div class="font-label-code text-[10px] text-on-surface-variant">Pure Swift 6</div>
+</button>
+<button class="est-platform-btn rounded-xl bg-surface-container p-3 text-left transition-all hover:bg-surface-container-high" data-label="Android Native (Compose)" data-multiplier="1.0" type="button">
+<span class="material-symbols-outlined text-tertiary text-[20px]">android</span>
+<div class="mt-1 font-title-sm text-[13px] font-semibold text-on-surface">Android Native</div>
+<div class="font-label-code text-[10px] text-on-surface-variant">Jetpack Compose</div>
+</button>
+<button class="est-platform-btn rounded-xl bg-surface-container p-3 text-left transition-all hover:bg-surface-container-high" data-label="Cross-Platform (RN/Flutter)" data-multiplier="1.25" type="button">
+<span class="material-symbols-outlined text-secondary text-[20px]">hub</span>
+<div class="mt-1 font-title-sm text-[13px] font-semibold text-on-surface">Cross-Platform</div>
+<div class="font-label-code text-[10px] text-on-surface-variant">React Native/Flutter</div>
+</button>
+<button class="est-platform-btn rounded-xl bg-surface-container p-3 text-left transition-all hover:bg-surface-container-high" data-label="Dual Native (iOS + Android)" data-multiplier="1.7" type="button">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">devices</span>
+<div class="mt-1 font-title-sm text-[13px] font-semibold text-on-surface">Dual Native</div>
+<div class="font-label-code text-[10px] text-on-surface-variant">Swift + Kotlin</div>
+</button>
+</div>
+</div>
+<!-- Step 2: Architecture Scope -->
+<div class="mt-space-lg pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-primary">Step 02 / Architecture &amp; Maturity Scope</span>
+<span class="font-label-code text-label-code text-on-surface-variant">System Scale</span>
+</div>
+<div class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3" id="estimator-scope-options">
+<button class="est-scope-btn rounded-xl bg-surface-container p-3 text-left transition-all hover:bg-surface-container-high" data-base-cost="45000" data-base-weeks="6" data-pod="3 Engineers" type="button">
+<div class="font-title-sm text-body-md font-bold text-on-surface">MVP Prototype</div>
+<div class="mt-1 font-body-sm text-[12px] text-on-surface-variant">High polish, core functionality for seed/Series A validation.</div>
+<div class="mt-2 font-label-code text-[11px] text-primary">6 Weeks Sprint</div>
+</button>
+<button class="est-scope-btn active-est-option rounded-xl bg-surface-container-high p-3 text-left transition-all" data-base-cost="75000" data-base-weeks="12" data-pod="4 Engineers + 1 QA" type="button">
+<div class="font-title-sm text-body-md font-bold text-on-surface">Scale-Ready Prod</div>
+<div class="mt-1 font-body-sm text-[12px] text-on-surface-variant">Full architecture, CI/CD, micro-animations, telemetry &amp; alerts.</div>
+<div class="mt-2 font-label-code text-[11px] text-primary">12 Weeks Sprint</div>
+</button>
+<button class="est-scope-btn rounded-xl bg-surface-container p-3 text-left transition-all hover:bg-surface-container-high" data-base-cost="125000" data-base-weeks="18" data-pod="5 Engineers + QA + Security Lead" type="button">
+<div class="font-title-sm text-body-md font-bold text-on-surface">Enterprise / SOC2</div>
+<div class="mt-1 font-body-sm text-[12px] text-on-surface-variant">HIPAA/SOC2 certified, pen-tested, automated regression suites.</div>
+<div class="mt-2 font-label-code text-[11px] text-primary">18 Weeks Sprint</div>
+</button>
+</div>
+</div>
+<!-- Step 3: Key Hardware & Specialized Modules -->
+<div class="mt-space-lg pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-primary">Step 03 / Specialized Modules &amp; Protocols</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Select Applicable</span>
+</div>
+<div class="mt-3 grid grid-cols-1 gap-2.5 sm:grid-cols-2" id="estimator-module-options">
+<label class="flex cursor-pointer items-center justify-between rounded-lg bg-surface-container p-3 transition-colors hover:bg-surface-container-high">
+<div class="flex items-center gap-2">
+<input checked="" class="est-module-cb h-4 w-4 rounded bg-surface-container-lowest text-primary" data-cost="7000" data-weeks="1.5" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface">Biometrics &amp; Secure Enclave</span>
+</div>
+<span class="font-label-code text-[11px] text-primary">+$7k</span>
+</label>
+<label class="flex cursor-pointer items-center justify-between rounded-lg bg-surface-container p-3 transition-colors hover:bg-surface-container-high">
+<div class="flex items-center gap-2">
+<input checked="" class="est-module-cb h-4 w-4 rounded bg-surface-container-lowest text-primary" data-cost="9000" data-weeks="2" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface">Payments &amp; In-App Subscriptions</span>
+</div>
+<span class="font-label-code text-[11px] text-primary">+$9k</span>
+</label>
+<label class="flex cursor-pointer items-center justify-between rounded-lg bg-surface-container p-3 transition-colors hover:bg-surface-container-high">
+<div class="flex items-center gap-2">
+<input class="est-module-cb h-4 w-4 rounded bg-surface-container-lowest text-primary" data-cost="14000" data-weeks="3" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface">BLE / Hardware IoT Device Sync</span>
+</div>
+<span class="font-label-code text-[11px] text-primary">+$14k</span>
+</label>
+<label class="flex cursor-pointer items-center justify-between rounded-lg bg-surface-container p-3 transition-colors hover:bg-surface-container-high">
+<div class="flex items-center gap-2">
+<input class="est-module-cb h-4 w-4 rounded bg-surface-container-lowest text-primary" data-cost="16000" data-weeks="3.5" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface">On-Device AI / CoreML Neural Pipeline</span>
+</div>
+<span class="font-label-code text-[11px] text-primary">+$16k</span>
+</label>
+<label class="flex cursor-pointer items-center justify-between rounded-lg bg-surface-container p-3 transition-colors hover:bg-surface-container-high sm:col-span-2">
+<div class="flex items-center gap-2">
+<input checked="" class="est-module-cb h-4 w-4 rounded bg-surface-container-lowest text-primary" data-cost="11000" data-weeks="2.5" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface">Offline-First CRDT Local Engine (Zero Latency SQLite sync)</span>
+</div>
+<span class="font-label-code text-[11px] text-primary">+$11k</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Real-Time Dynamic Calculation Display (Right Col) -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container p-space-lg shadow-xl lg:col-span-5">
+<div>
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-3">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Live Architecture Estimate</span>
+<span class="rounded bg-tertiary-container/30 px-2 py-0.5 font-label-code text-[10px] text-tertiary">Real-Time Scope</span>
+</div>
+<div class="mt-space-md">
+<span class="font-label-caps text-label-caps text-on-surface-variant">ESTIMATED INVESTMENT RANGE</span>
+<div class="mt-1 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg lg:text-[44px] font-extrabold text-primary" id="calc-price-display">$97,000 - $112,000</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Fixed-scope milestone contract with guaranteed sprint deliverables.</p>
+</div>
+<!-- Dynamic Metrics Summary Cards -->
+<div class="mt-space-md grid grid-cols-2 gap-3">
+<div class="rounded-xl bg-surface-container-low p-3">
+<span class="font-label-caps text-[10px] text-on-surface-variant">DELIVERY TIMELINE</span>
+<div class="mt-1 font-headline-md text-headline-md font-bold text-on-surface" id="calc-weeks-display">18.0 Sprints</div>
+<div class="font-label-code text-[10px] text-tertiary">~3.5 Calendar Months</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-3">
+<span class="font-label-caps text-[10px] text-on-surface-variant">ALLOCATED POD SIZE</span>
+<div class="mt-1 font-headline-md text-headline-md font-bold text-on-surface" id="calc-pod-display">4 Engineers + 1 QA</div>
+<div class="font-label-code text-[10px] text-primary">+ 1 Dedicated QA Eng</div>
+</div>
+</div>
+<!-- Breakdown list -->
+<div class="mt-space-md space-y-2 rounded-xl bg-surface-container-lowest p-3 font-label-code text-[11px]">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Selected Stack:</span>
+<span class="font-semibold text-on-surface" id="calc-summary-stack">iOS Native (SwiftUI)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Target Quality Gate:</span>
+<span class="font-semibold text-on-surface">100% Code-Reviewed + CI/CD</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">App Store Approval Warranty:</span>
+<span class="font-semibold text-tertiary">Guaranteed 1st Submission</span>
+</div>
+</div>
+</div>
+<!-- Bottom CTA -->
+<div class="mt-space-lg pt-space-xs">
+<a class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-primary-container px-6 py-3.5 font-title-sm text-body-md font-semibold text-surface-container-lowest shadow-[0_0_24px_rgba(6,182,212,0.35)] transition-all hover:bg-primary" href="#discovery-session">
+<span class="">Lock In Architecture Spec</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</a>
+<p class="mt-2 text-center font-label-code text-[10px] text-on-surface-variant">
+              No commitment required. Scope is refined with technical leads.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 5: ENTERPRISE PROVENANCE & TESTIMONIALS (Trust) ================= -->
+<section class="relative w-full py-space-xl lg:py-28">
+<div class="mx-auto max-w-[1440px] px-margin lg:px-margin-lg">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 rounded-full bg-surface-container-high px-3 py-1 font-label-caps text-label-caps uppercase text-tertiary">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+          Proven Reliability
+        </div>
+<h2 class="mt-space-sm font-headline-lg text-headline-lg lg:text-[40px] font-extrabold text-on-surface">
+          Engineered to Never Fail at Scale
+        </h2>
+<p class="mt-space-xs max-w-2xl font-body-md text-body-md text-on-surface-variant">
+          Enterprise leaders and product architects trust ApexLabs when failure is not an option. Here is what engineering leaders have to say.
+        </p>
+</div>
+<!-- Testimonials Grid -->
+<div class="mt-space-xl grid grid-cols-1 gap-gutter-lg lg:grid-cols-3">
+<!-- Review 1 -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-low p-space-lg shadow-md transition-all duration-300 hover:bg-surface-container">
+<div>
+<!-- Stars & Verified Pill -->
+<div class="flex items-center justify-between">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<span class="rounded bg-surface-container-high px-2 py-0.5 font-label-code text-[10px] text-tertiary">Verified Partner</span>
+</div>
+<!-- Quote -->
+<p class="mt-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+              "ApexLabs delivered our Kotlin Multiplatform rewrite 3 weeks ahead of schedule. Crash-free sessions jumped from 98.2% to 99.96%, and our continuous deployment time dropped by 70%. Their architectural rigor is unmatched."
+            </p>
+</div>
+<div class="mt-space-lg flex items-center gap-3 pt-space-xs border-t border-outline-variant/20">
+<div class="h-10 w-10 overflow-hidden rounded-full bg-surface-container-high">
+<img class="h-full w-full object-cover" data-alt="Portrait photograph of an executive VP of Mobile Engineering, mature professional in dark collared shirt against subtle modern tech office background with warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbLwwP5w12C6OI2vMmyxYjFbhucGThfliSPUWQ985YR2PlIktajtJQyylIjNtDZtcYf8WjyG6vmVk12u-LmScSU64wNBk3K4q6CUZRNy4VK9ocFnSyZ8MZbHoHp1no7d37KQybOhPpf60w7Ei9nxyN5m6kAGx30iaVof2nojmBjPIGTT9ZvYdwId0eW4vsWC_R6CPkjhWEG6_j1KjWCw6hyVcuK3vahE8rDGgBpsYBtlNDXx8S4CXnaQ">
+</div>
+<div>
+<div class="font-title-sm text-body-md font-bold text-on-surface">Marcus Vance</div>
+<div class="font-label-code text-[11px] text-on-surface-variant">VP of Mobile • Apex Liquidity (FinTech)</div>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-low p-space-lg shadow-md transition-all duration-300 hover:bg-surface-container">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<span class="rounded bg-surface-container-high px-2 py-0.5 font-label-code text-[10px] text-tertiary">Verified Partner</span>
+</div>
+<p class="mt-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+              "Their deep knowledge of iOS CoreBluetooth protocols resolved sync latency and peripheral reconnect bugs that had stumped two previous agencies. They took us through FDA Class II software audit with zero findings."
+            </p>
+</div>
+<div class="mt-space-lg flex items-center gap-3 pt-space-xs border-t border-outline-variant/20">
+<div class="h-10 w-10 overflow-hidden rounded-full bg-surface-container-high">
+<img class="h-full w-full object-cover" data-alt="Professional female Chief Product Officer in modern tech apparel with glasses, smiling confidently against softly blurred architectural background with cool slate lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkJSRAq8KyG8ePa1qmOfYv8n6TCJnQm4RQOwKRMWd5WHscxA9UCcF7PaUKtjF20GPTQFYHlUmHpAW-jL6vTTzN5usF4MaETSEMxUwNTnTRkDbrfseVaqGcvBzMhRNOWcx86Tto2MmXC5JkknXWXoSG6eVlxpxKNH9JPvysEf2yIPLbwFl0xGm2kQxCHJoqqTJu93Vfjjgz-ztaHYeopm7gTksouoR3Jf2NcM_jQWmBt6jEOrgouAgRag">
+</div>
+<div>
+<div class="font-title-sm text-body-md font-bold text-on-surface">Elena Rostova, M.D.</div>
+<div class="font-label-code text-[11px] text-on-surface-variant">Chief Product Officer • AuraHealth Systems</div>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-low p-space-lg shadow-md transition-all duration-300 hover:bg-surface-container">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex items-center text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<span class="rounded bg-surface-container-high px-2 py-0.5 font-label-code text-[10px] text-tertiary">Verified Partner</span>
+</div>
+<p class="mt-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+              "The on-device CoreML pipeline they built runs 4x faster with 60% less battery draw than our original Python server proxy. Running 7B models locally on iPhone 16 felt like pure magic. ApexLabs is in a league of their own."
+            </p>
+</div>
+<div class="mt-space-lg flex items-center gap-3 pt-space-xs border-t border-outline-variant/20">
+<div class="h-10 w-10 overflow-hidden rounded-full bg-surface-container-high">
+<img class="h-full w-full object-cover" data-alt="Portrait photograph of young tech founder CEO with confident expression, dark sweater, modern loft office setting with subtle cyan neon reflections in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaNnF3tFJYOSGsLZLm_ufg00i5hBd86RKyWHrZloV79dNifvmYe0QxFEfxKkaZyeXeqCGA_B85O7P7cTeG2UgKRrG4BFS17ve87-3e4OU6TVb9J6ks-NwdiJ6AIUbry3q0eB_k19v6zz5b4RnHkUf48OFu5vGt37EqlcXf7f6zw5-OVhseA4gYnL3KVTLTRV9y85oi93vyiSKPFbUrUbTz7Dqm5iKb46yFDUADBAQE6zUdOCxsSwDpgA">
+</div>
+<div>
+<div class="font-title-sm text-body-md font-bold text-on-surface">Devon Chen</div>
+<div class="font-label-code text-[11px] text-on-surface-variant">Founder &amp; CEO • NeuroSync AI</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Enterprise Compliance & Audit Badges Strip -->
+<div class="mt-space-xl rounded-2xl bg-surface-container-lowest p-space-lg shadow-inner">
+<div class="grid grid-cols-2 items-center justify-items-center gap-6 md:grid-cols-5">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[24px]">verified_user</span>
+<div class="text-left font-label-code text-[11px]">
+<span class="block font-bold text-on-surface">SOC2 Type II</span>
+<span class="">Audited Annually</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[24px]">medical_services</span>
+<div class="text-left font-label-code text-[11px]">
+<span class="block font-bold text-on-surface">HIPAA Ready</span>
+<span class="">BAA Compatible</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[24px]">lock</span>
+<div class="text-left font-label-code text-[11px]">
+<span class="block font-bold text-on-surface">ISO 27001</span>
+<span class="">Certified Ops</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[24px]">devices_other</span>
+<div class="text-left font-label-code text-[11px]">
+<span class="block font-bold text-on-surface">Apple Partner</span>
+<span class="">Distinguished Dev</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[24px]">cloud_done</span>
+<div class="text-left font-label-code text-[11px]">
+<span class="block font-bold text-on-surface">GCP &amp; AWS Mobile</span>
+<span class="">Premier Cloud</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 6: ARCHITECTURE DISCOVERY CONSULTATION (Act / Conversion) ================= -->
+<section class="relative w-full bg-surface-container-lowest/90 py-space-xl lg:py-28" id="discovery-session">
+<!-- Ambient Radial Underglow -->
+<div class="pointer-events-none absolute bottom-0 left-1/2 h-[450px] w-[800px] -translate-x-1/2 rounded-full bg-primary/10 blur-[130px]"></div>
+<div class="relative mx-auto max-w-[1440px] px-margin lg:px-margin-lg">
+<div class="grid grid-cols-1 items-start gap-gutter-lg lg:grid-cols-12">
+<!-- Left Column: What to Expect / Value Center -->
+<div class="flex flex-col lg:col-span-6">
+<div class="inline-flex items-center gap-2 rounded-full bg-surface-container-high px-3 py-1 font-label-caps text-label-caps uppercase text-primary">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+            High-Velocity Initiation
+          </div>
+<h2 class="mt-space-sm font-headline-lg text-headline-lg lg:text-[44px] font-extrabold text-on-surface leading-tight">
+            Ready to Turn Your Mobile Vision Into <span class="text-primary">Shipped Code</span>?
+          </h2>
+<p class="mt-space-md font-body-lg text-body-lg text-on-surface-variant">
+            No junior account managers. No generic slide decks. Meet directly with a Senior Mobile Systems Architect within 24 hours to stress-test your scope, evaluate tech stack trade-offs, and map your release runway.
+          </p>
+<!-- Step-by-Step Architecture Session Outline -->
+<div class="mt-space-lg space-y-space-md">
+<div class="flex items-start gap-3">
+<div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-surface-container-high font-label-code text-label-code font-bold text-primary">
+                01
+              </div>
+<div>
+<h4 class="font-title-sm text-body-md font-bold text-on-surface">Mutual NDA &amp; Codebase Ingestion</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Executed upfront before our video call. We review existing Figma prototypes, PRDs, or legacy repos.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-surface-container-high font-label-code text-label-code font-bold text-primary">
+                02
+              </div>
+<div>
+<h4 class="font-title-sm text-body-md font-bold text-on-surface">45-Minute Deep Technical Audit</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We evaluate state machines, BLE or AI latency requirements, offline synchronization topology, and OS lifecycle quirks.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-surface-container-high font-label-code text-label-code font-bold text-primary">
+                03
+              </div>
+<div>
+<h4 class="font-title-sm text-body-md font-bold text-on-surface">Actionable Architecture Blueprint Delivered</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Receive a complimentary sprint breakdown, team pod recommendation, and fixed-cost milestone proposal within 48 hours.</p>
+</div>
+</div>
+</div>
+<!-- Direct Contact Hotlink -->
+<div class="mt-space-xl flex items-center gap-4 rounded-xl bg-surface-container-low p-4">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</div>
+<div>
+<div class="font-label-caps text-[10px] text-on-surface-variant">PREFER DIRECT ASYNC ENQUIRY?</div>
+<div class="font-label-code text-body-sm font-semibold text-on-surface">
+                Email our Partner Desk: <a class="text-primary hover:underline" href="mailto:architects@apexlabs.dev">architects@apexlabs.dev</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Scheduling Form -->
+<div class="rounded-2xl bg-surface-container p-space-lg shadow-2xl lg:col-span-6">
+<div class="border-b border-outline-variant/30 pb-3">
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Request Technical Discovery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Guaranteed architect response within 1 business day.</p>
+</div>
+<form class="mt-space-md space-y-space-md" id="discovery-form" onsubmit="handleDiscoverySubmit(event)">
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1">Your Full Name *</label>
+<input class="w-full rounded-lg bg-surface-container-lowest px-3.5 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Alex Mercer" required="" type="text">
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1">Work Email Address *</label>
+<input class="w-full rounded-lg bg-surface-container-lowest px-3.5 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-1 focus:ring-primary" placeholder="alex@company.com" required="" type="email">
+</div>
+</div>
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1">Target Operating Systems *</label>
+<select class="w-full rounded-lg bg-surface-container-lowest px-3.5 py-2.5 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-primary">
+<option value="both-native">Both iOS &amp; Android (Native Stacks)</option>
+<option value="ios-native">iOS Native Exclusively (Swift 6)</option>
+<option value="android-native">Android Native Exclusively (Compose)</option>
+<option value="cross-platform">Cross-Platform (React Native / Flutter)</option>
+<option value="visionos-iot">visionOS / watchOS / Connected Hardware</option>
+</select>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1">Approximate Target Launch</label>
+<select class="w-full rounded-lg bg-surface-container-lowest px-3.5 py-2.5 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-1 focus:ring-primary">
+<option value="immediate">Immediate (&lt; 2 months)</option>
+<option value="q3">Within 3-4 months</option>
+<option value="q4">Flexible / Planning Phase</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-1">App Concept Brief &amp; Hardware Requirements</label>
+<textarea class="w-full rounded-lg bg-surface-container-lowest px-3.5 py-2.5 font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Briefly describe what you're building, target user personas, and any special requirements (e.g., CoreML, BLE sensors, Stripe Connect, offline sync)..." rows="3"></textarea>
+</div>
+<div class="flex items-center gap-2">
+<input checked="" class="h-4 w-4 rounded bg-surface-container-lowest text-primary" id="nda-checkbox" type="checkbox">
+<label class="font-body-sm text-[12px] text-on-surface-variant" for="nda-checkbox">Send unilateral mutual NDA prior to discovery session.</label>
+</div>
+<div>
+<button class="w-full rounded-lg bg-gradient-to-r from-primary-container to-secondary-container px-6 py-3.5 font-title-sm text-body-md font-bold text-surface-container-lowest shadow-[0_0_28px_rgba(6,182,212,0.4)] transition-all hover:opacity-95" id="discovery-submit-btn" type="submit">
+                Request Technical Discovery Session
+              </button>
+</div>
+<div class="hidden rounded-lg bg-tertiary-container/20 p-3 text-center font-label-code text-label-code text-tertiary" id="form-success-message">
+              Discovery session requested! Our Mobile Architect will reach out in &lt; 24 hours.
+            </div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Vanilla JS Micro-Interactions -->
+<script>
+  // Hero Stack Tab Switcher
+  const heroTabs = document.querySelectorAll('.hero-tab-btn');
+  const heroRuntimeBadge = document.getElementById('hero-runtime-badge');
+  const heroFps = document.getElementById('hero-fps-counter');
+  const heroBalance = document.getElementById('hero-balance');
+  const heroMem = document.getElementById('hero-stat-memory');
+  const heroStart = document.getElementById('hero-stat-start');
+  const heroSparkline = document.getElementById('hero-sparkline-line');
+
+  const stackData = {
+    ios: {
+      runtime: 'Swift 6.0 Concurrency • Metal 3',
+      fps: '120 FPS',
+      mem: '24.2 MB',
+      start: '312 ms',
+      balance: '$1,489,230.12',
+      spark: 'M 0 52 Q 40 28, 80 44 T 160 22 T 240 38 T 320 8 L 360 14'
+    },
+    android: {
+      runtime: 'Jetpack Compose 1.7 • Kotlin Multiplatform',
+      fps: '90 FPS',
+      mem: '31.4 MB',
+      start: '348 ms',
+      balance: '$1,524,010.50',
+      spark: 'M 0 45 Q 60 55, 120 30 T 200 40 T 280 18 T 360 22'
+    },
+    cross: {
+      runtime: 'React Native Fabric JSI Engine • Hermes AOT',
+      fps: '60 FPS',
+      mem: '42.8 MB',
+      start: '420 ms',
+      balance: '$1,462,800.00',
+      spark: 'M 0 48 Q 50 32, 100 40 T 220 28 T 300 20 T 360 16'
+    }
+  };
+
+  heroTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      heroTabs.forEach(t => {
+        t.classList.remove('bg-surface-container-high', 'text-primary');
+        t.classList.add('text-on-surface-variant');
+      });
+      tab.classList.add('bg-surface-container-high', 'text-primary');
+      tab.classList.remove('text-on-surface-variant');
+
+      const stack = tab.getAttribute('data-stack');
+      const data = stackData[stack];
+      if (data) {
+        heroRuntimeBadge.textContent = data.runtime;
+        heroFps.textContent = data.fps;
+        heroMem.textContent = data.mem;
+        heroStart.textContent = data.start;
+        heroBalance.textContent = data.balance;
+        heroSparkline.setAttribute('d', data.spark);
+      }
+    });
+  });
+
+  // Expandable Tech Specs Drawers in Section 2
+  function toggleTechDrawer(drawerId) {
+    const el = document.getElementById(drawerId);
+    if (el) {
+      el.classList.toggle('hidden');
+    }
+  }
+
+  // Filterable Case Studies in Section 3
+  const filterBtns = document.querySelectorAll('.cs-filter-btn');
+  const cards = document.querySelectorAll('.case-study-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => {
+        b.classList.remove('bg-surface-container-high', 'text-primary');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-surface-container-high', 'text-primary');
+      btn.classList.remove('text-on-surface-variant');
+
+      const filterVal = btn.getAttribute('data-filter');
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (filterVal === 'all' || cat.includes(filterVal)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Modal logic for Case Study Deep Dives
+  const deepDiveModal = document.getElementById('deep-dive-modal');
+  const modalTitle = document.getElementById('modal-title');
+  const modalContent = document.getElementById('modal-content');
+
+  const studyDetails = {
+    kinetix: {
+      title: 'Kinetix Vault: Engineering Architecture',
+      html: `
+        <p><strong>Challenge:</strong> Secure high-speed biometric client for ultra-high-net-worth users handling over $4.2B quarterly with zero tolerance for state de-synchronization.</p>
+        <p><strong>Architecture Solution:</strong> Swift 6 strict concurrency model preventing data race conditions. Encrypted biometric cryptographic enclave keys generated on Secure Enclave and exchanged via Hardware Security Module (HSM) session tokens.</p>
+        <p><strong>Key Results:</strong> 99.98% crash-free sessions, 0.4s instantaneous biometric cold unlock, zero reported authentication failures over 18 million executions.</p>
+      `
+    },
+    aurahealth: {
+      title: 'AuraHealth Pro: Telemetry & FDA Compliance',
+      html: `
+        <p><strong>Challenge:</strong> Continuous real-time BLE medical hardware streaming where packet dropouts could impact diagnosis accuracy.</p>
+        <p><strong>Architecture Solution:</strong> Custom CoreBluetooth peripheral manager with priority queue circular buffers and SQLite encrypted local store (SQLCipher). Built shared packet decoding primitives in Kotlin Multiplatform for exact parity between iOS & Android hospital tablets.</p>
+        <p><strong>Key Results:</strong> 99.999% packet capture reliability, FDA Class II pre-market documentation cleared on initial submission.</p>
+      `
+    },
+    voltfleet: {
+      title: 'VoltFleet Dispatch: Offline AI Routing Suite',
+      html: `
+        <p><strong>Challenge:</strong> 48,000+ drivers navigating deep highway tunnels, remote freight lanes, and underground terminals with zero cellular connectivity.</p>
+        <p><strong>Architecture Solution:</strong> Embedded C++ Mapbox rendering pipeline paired with pre-cached raster MBTiles. Local dead-reckoning sensor fusion merging accelerometer, gyroscope, and low-latency GPS fixes.</p>
+        <p><strong>Key Results:</strong> 100% offline navigation continuity and a 34% drop in device battery consumption under prolonged continuous GPS tracking.</p>
+      `
+    }
+  };
+
+  function openDeepDiveModal(studyKey) {
+    const data = studyDetails[studyKey];
+    if (data) {
+      modalTitle.textContent = data.title;
+      modalContent.innerHTML = data.html;
+      deepDiveModal.classList.remove('hidden');
+      deepDiveModal.classList.add('flex');
+    }
+  }
+
+  function closeDeepDiveModal() {
+    deepDiveModal.classList.add('hidden');
+    deepDiveModal.classList.remove('flex');
+  }
+
+  // Section 4: Estimator Calculator Math
+  let selectedPlatformMult = 1.0;
+  let selectedPlatformLabel = 'iOS Native (SwiftUI)';
+  let selectedBaseCost = 75000;
+  let selectedBaseWeeks = 12;
+  let selectedPod = '4 Engineers + 1 QA';
+
+  const platformBtns = document.querySelectorAll('.est-platform-btn');
+  const scopeBtns = document.querySelectorAll('.est-scope-btn');
+  const moduleCheckboxes = document.querySelectorAll('.est-module-cb');
+
+  const priceDisplay = document.getElementById('calc-price-display');
+  const weeksDisplay = document.getElementById('calc-weeks-display');
+  const podDisplay = document.getElementById('calc-pod-display');
+  const summaryStack = document.getElementById('calc-summary-stack');
+
+  function updateEstimate() {
+    let moduleCostTotal = 0;
+    let moduleWeeksTotal = 0;
+
+    moduleCheckboxes.forEach(cb => {
+      if (cb.checked) {
+        moduleCostTotal += parseFloat(cb.getAttribute('data-cost'));
+        moduleWeeksTotal += parseFloat(cb.getAttribute('data-weeks'));
+      }
+    });
+
+    const calculatedCost = Math.round((selectedBaseCost + moduleCostTotal) * selectedPlatformMult);
+    const lowRange = Math.round(calculatedCost * 0.95 / 1000) * 1000;
+    const highRange = Math.round(calculatedCost * 1.10 / 1000) * 1000;
+    const totalWeeks = (selectedBaseWeeks + moduleWeeksTotal).toFixed(1);
+
+    priceDisplay.textContent = `$${lowRange.toLocaleString()} - $${highRange.toLocaleString()}`;
+    weeksDisplay.textContent = `${totalWeeks} Sprints`;
+    podDisplay.textContent = selectedPod;
+    summaryStack.textContent = selectedPlatformLabel;
+  }
+
+  platformBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      platformBtns.forEach(b => {
+        b.classList.remove('bg-surface-container-high');
+        b.classList.add('bg-surface-container');
+      });
+      btn.classList.add('bg-surface-container-high');
+      btn.classList.remove('bg-surface-container');
+
+      selectedPlatformMult = parseFloat(btn.getAttribute('data-multiplier'));
+      selectedPlatformLabel = btn.getAttribute('data-label');
+      updateEstimate();
+    });
+  });
+
+  scopeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      scopeBtns.forEach(b => {
+        b.classList.remove('bg-surface-container-high');
+        b.classList.add('bg-surface-container');
+      });
+      btn.classList.add('bg-surface-container-high');
+      btn.classList.remove('bg-surface-container');
+
+      selectedBaseCost = parseFloat(btn.getAttribute('data-base-cost'));
+      selectedBaseWeeks = parseFloat(btn.getAttribute('data-base-weeks'));
+      selectedPod = btn.getAttribute('data-pod');
+      updateEstimate();
+    });
+  });
+
+  moduleCheckboxes.forEach(cb => {
+    cb.addEventListener('change', updateEstimate);
+  });
+
+  // Run initial calculator update
+  updateEstimate();
+
+  // Form submission handler
+  function handleDiscoverySubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('discovery-submit-btn');
+    const msg = document.getElementById('form-success-message');
+    btn.disabled = true;
+    btn.textContent = 'Processing Technical Request...';
+    setTimeout(() => {
+      btn.classList.add('hidden');
+      msg.classList.remove('hidden');
+    }, 800);
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 pt-space-xl pb-space-lg text-on-surface-variant"><div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-xl border-b border-outline-variant/20"><div class="lg:col-span-4 flex flex-col gap-space-md"><a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity group"><div class="relative flex items-center justify-center"><div class="absolute -inset-1 rounded-full bg-primary/20 blur-md group-hover:bg-primary/40 transition-all"></div><div class="w-9 h-9 relative z-10"><img alt="ApexLabs Logo" class="w-full h-full object-contain rounded-xl" src="favicon.png"></div></div><span class="font-title-sm text-title-sm text-on-surface tracking-tight">Apex <span class="text-primary">Labs</span></span></a><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Engineering mission-critical iOS, Android, and cross-platform applications with world-class product craftsmanship.</p><div class="flex items-center gap-space-sm"><a aria-label="ApexLabs GitHub" class="group relative w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] hover:-translate-y-0.5" href="https://github.com" rel="noopener" target="_blank"><svg class="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewbox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg></a><a aria-label="ApexLabs LinkedIn" class="group relative w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] hover:-translate-y-0.5" href="https://linkedin.com" rel="noopener" target="_blank"><svg class="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.778-.773 1.778-1.729V1.73C24 .774 23.205 0 22.222 0h.003z"></path></svg></a><a aria-label="ApexLabs X Twitter" class="group relative w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] hover:-translate-y-0.5" href="https://twitter.com" rel="noopener" target="_blank"><svg class="w-4 h-4 fill-current transition-transform duration-200 group-hover:scale-110" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a><a aria-label="ApexLabs Discord" class="group relative w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] hover:-translate-y-0.5" href="https://discord.com" rel="noopener" target="_blank"><svg class="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewbox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.894.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg></a><a aria-label="ApexLabs Dribbble" class="group relative w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] hover:-translate-y-0.5" href="https://dribbble.com" rel="noopener" target="_blank"><svg class="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewbox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm9.73 10.45c-.347-.03-2.617-.209-5.18.847-.13-.292-.266-.583-.41-.872 3.125-1.574 4.364-3.328 4.492-3.522 1.481 1.77 2.378 4.025 2.378 6.486 0 .39-.033.774-.08 1.152-.397-1.636-.889-3.23-1.2-4.091zM12 2.222c2.614 0 5.006 1.025 6.776 2.69-.17.243-1.328 1.83-4.323 3.25-1.428-2.584-3.036-4.9-3.226-5.176.25-.015.512-.023.773-.023v-.741zm-3.09 1.134c.184.26 1.758 2.531 3.197 5.08-3.957 1.164-7.514 1.205-8.082 1.205-.008-.21-.013-.42-.013-.632 0-2.67 1.135-5.08 2.96-6.792.65-.598 1.304-1.04 1.938-1.341v1.48zm-6.666 8.644c0-.135.008-.27.016-.404.535.007 4.542.023 8.877-1.334.306.63.593 1.272.859 1.92-5.184 1.573-7.585 5.584-7.72 5.823A9.742 9.742 0 012.244 12zm9.756 9.778c-2.484 0-4.757-.932-6.491-2.469.176-.328 2.072-3.665 7.42-5.182 1.173 3.076 1.666 5.882 1.778 6.586-.848.7-1.87 1.065-2.707 1.065zm4.819-2.295c-.13-.733-.61-3.33-1.745-6.287 2.39-.99 4.417-.833 4.75-.802-.455 3.013-2.28 5.612-4.887 7.089h2.082z"></path></svg></a></div><div class="flex items-center gap-space-sm pt-space-xs"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant/40"><span class="material-symbols-outlined text-[14px] text-tertiary">verified_user</span><span class="font-label-code text-label-code text-on-surface">SOC2 Type II</span></div><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant/40"><span class="material-symbols-outlined text-[14px] text-tertiary">lock</span><span class="font-label-code text-label-code text-on-surface">ISO 27001 Certified</span></div></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><div class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Services</div><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class="hover:text-primary transition-colors"><a class="" href="services.html">iOS Native (SwiftUI)</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">Android (Jetpack Compose)</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">Cross-Platform (React Native)</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">Flutter Enterprise</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">Cloud &amp; Microservices</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">AI/ML On-Device (CoreML)</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">App Modernization</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><div class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Solutions</div><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">FinTech &amp; Banking</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">HealthTech &amp; Telehealth</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">Logistics &amp; Connected IoT</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">Web3 &amp; Crypto Wallets</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">SaaS Mobile Companions</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">Enterprise Field Ops</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><div class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Company</div><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class="hover:text-primary transition-colors"><a class="" href="process.html">About Us</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">Case Studies</a></li><li class="hover:text-primary transition-colors"><a class="" href="process.html">Engineering Process</a></li><li class="hover:text-primary transition-colors"><a class="" href="blog.html">Open Source</a></li><li class="hover:text-primary transition-colors flex items-center gap-1.5"><a class="" href="contact.html">Careers</a><span class="font-label-caps text-[9px] px-1.5 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary border border-tertiary/30">Hiring</span></li><li class="hover:text-primary transition-colors"><a class="" href="blog.html">Tech Blog</a></li><li class="hover:text-primary transition-colors"><a class="" href="contact.html">Security &amp; Compliance</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><div class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Global Hubs</div><div class="flex flex-col gap-2 font-body-sm text-body-sm"><p class=""><strong class="text-on-surface">San Francisco:</strong> 500 Howard St, SOMA</p><p class=""><strong class="text-on-surface">London:</strong> 100 Bishopsgate, EC2N</p><p class=""><strong class="text-on-surface">Tokyo:</strong> Roppongi Hills Mori Tower</p><p class="pt-1"><a class="text-primary hover:underline" href="mailto:hello@apexlabs.dev">hello@apexlabs.dev</a></p></div><div class="pt-space-xs"><div class="font-label-caps text-label-caps uppercase text-on-surface mb-2">Stay Ahead</div><form class="flex items-center gap-1"><input class="w-full px-2.5 py-1.5 text-body-sm bg-surface-container-low border border-outline-variant/50 rounded text-on-surface focus:outline-none focus:border-primary" placeholder="developer@domain.com" type="email"/><button aria-label="Subscribe" class="px-2.5 py-1.5 bg-primary-container text-surface-container-lowest rounded hover:bg-primary transition-colors flex items-center justify-center" type="submit"><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button></form></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm"><p class="">© 2025 ApexLabs Studio Inc. All rights reserved.</p><div class="flex flex-wrap items-center gap-space-md"><span class="">Privacy Policy</span><span class="">•</span><span class="">Terms of Service</span><span class="">•</span><span class="">Security Status</span><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant/30 font-label-code text-label-code text-on-surface"><span class="material-symbols-outlined text-[14px] text-primary">language</span><span class="">EN / US (LTR)</span></div></div></div></div></footer>
+
+
+
+<style>
+:root {
+  --color-on-secondary: #3c0091;
+  --color-on-primary-fixed-variant: #004e5c;
+  --color-on-primary-container: #00424f;
+  --color-surface-bright: #ffffff;
+  --color-error-container: #93000a;
+  --color-background: #ffffff;
+  --color-inverse-on-surface: #f8fafc;
+  --color-on-secondary-fixed: #23005c;
+  --color-on-surface: #0f172a;
+  --color-tertiary: #4edea3;
+  --color-on-secondary-fixed-variant: #5516be;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-tertiary-container: #1bbd85;
+  --color-surface-container-low: #f8fafc;
+  --color-secondary-fixed: #e9ddff;
+  --color-secondary-container: #571bc1;
+  --color-surface-container-high: #e2e8f0;
+  --color-on-tertiary-fixed: #002113;
+  --color-on-error: #690005;
+  --color-primary-fixed-dim: #4cd7f6;
+  --color-on-background: #0f172a;
+  --color-surface-dim: #f1f5f9;
+  --color-on-tertiary-fixed-variant: #005236;
+  --color-primary-fixed: #acedff;
+  --color-on-primary: #003640;
+  --color-outline: #94a3b8;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface-variant: #334155;
+  --color-surface-variant: #e2e8f0;
+  --color-on-primary-fixed: #001f26;
+  --color-primary: #4cd7f6;
+  --color-surface-container-highest: #cbd5e1;
+  --color-secondary: #d0bcff;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-surface: #f8fafc;
+  --color-inverse-primary: #00687a;
+  --color-on-tertiary: #003824;
+  --color-error: #ffb4ab;
+  --color-inverse-surface: #1e293b;
+  --color-on-secondary-container: #c4abff;
+  --color-on-error-container: #ffdad6;
+  --color-surface-container: #f1f5f9;
+  --color-surface-tint: #4cd7f6;
+  --color-secondary-fixed-dim: #d0bcff;
+  --color-primary-container: #06b6d4;
+  --color-outline-variant: #cbd5e1;
+  --color-on-tertiary-container: #00452e;
+}
+.dark {
+  --color-on-secondary: #3c0091;
+  --color-on-primary-fixed-variant: #004e5c;
+  --color-on-primary-container: #00424f;
+  --color-surface-bright: #353944;
+  --color-error-container: #93000a;
+  --color-background: #0f131d;
+  --color-inverse-on-surface: #2c303b;
+  --color-on-secondary-fixed: #23005c;
+  --color-on-surface: #dfe2f1;
+  --color-tertiary: #4edea3;
+  --color-on-secondary-fixed-variant: #5516be;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-tertiary-container: #1bbd85;
+  --color-surface-container-low: #171b26;
+  --color-secondary-fixed: #e9ddff;
+  --color-secondary-container: #571bc1;
+  --color-surface-container-high: #262a35;
+  --color-on-tertiary-fixed: #002113;
+  --color-on-error: #690005;
+  --color-primary-fixed-dim: #4cd7f6;
+  --color-on-background: #dfe2f1;
+  --color-surface-dim: #0f131d;
+  --color-on-tertiary-fixed-variant: #005236;
+  --color-primary-fixed: #acedff;
+  --color-on-primary: #003640;
+  --color-outline: #869397;
+  --color-surface-container-lowest: #0a0e18;
+  --color-on-surface-variant: #bcc9cd;
+  --color-surface-variant: #313540;
+  --color-on-primary-fixed: #001f26;
+  --color-primary: #4cd7f6;
+  --color-surface-container-highest: #313540;
+  --color-secondary: #d0bcff;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-surface: #0f131d;
+  --color-inverse-primary: #00687a;
+  --color-on-tertiary: #003824;
+  --color-error: #ffb4ab;
+  --color-inverse-surface: #dfe2f1;
+  --color-on-secondary-container: #c4abff;
+  --color-on-error-container: #ffdad6;
+  --color-surface-container: #1c1f2a;
+  --color-surface-tint: #4cd7f6;
+  --color-secondary-fixed-dim: #d0bcff;
+  --color-primary-container: #06b6d4;
+  --color-outline-variant: #3d494c;
+  --color-on-tertiary-container: #00452e;
+}
+
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const htmlElement = document.documentElement;
+    // Check localStorage
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    
+    const applyTheme = (theme) => {
+      if (theme === 'dark') {
+        htmlElement.classList.add('dark');
+      } else {
+        htmlElement.classList.remove('dark');
+      }
+      
+      // Update icons
+      const currentBtns = document.querySelectorAll('button[aria-label="Toggle color mode"]');
+      currentBtns.forEach(btn => {
+        const iconSpan = btn.querySelector('.material-symbols-outlined');
+        if (iconSpan) {
+          iconSpan.textContent = theme === 'dark' ? 'dark_mode' : 'light_mode';
+        }
+      });
+    };
+    
+    applyTheme(savedTheme);
+    
+    // Bind events
+    const themeToggleBtns = document.querySelectorAll('button[aria-label="Toggle color mode"]');
+    themeToggleBtns.forEach(themeToggleBtn => {
+      // Remove any existing click listeners by cloning
+      const newBtn = themeToggleBtn.cloneNode(true);
+      themeToggleBtn.parentNode.replaceChild(newBtn, themeToggleBtn);
+      
+      newBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isDark = htmlElement.classList.contains('dark');
+        const newTheme = isDark ? 'light' : 'dark';
+        localStorage.setItem('theme', newTheme);
+        applyTheme(newTheme);
+      });
+    });
+    // RTL logic
+    const savedDir = localStorage.getItem('dir') || 'ltr';
+    const applyRtl = (dir) => {
+      if (dir === 'rtl') {
+        htmlElement.setAttribute('dir', 'rtl');
+      } else {
+        htmlElement.removeAttribute('dir');
+      }
+      
+      const rtlBtns = document.querySelectorAll('button[aria-label="Toggle RTL mode"]');
+      rtlBtns.forEach(btn => {
+        const iconSpan = btn.querySelector('.material-symbols-outlined');
+        if (iconSpan) {
+          iconSpan.textContent = dir === 'rtl' ? 'format_textdirection_l_to_r' : 'language';
+        }
+      });
+    };
+    
+    applyRtl(savedDir);
+    
+    const rtlToggleBtns = document.querySelectorAll('button[aria-label="Toggle RTL mode"]');
+    rtlToggleBtns.forEach(rtlToggleBtn => {
+      const newRtlBtn = rtlToggleBtn.cloneNode(true);
+      rtlToggleBtn.parentNode.replaceChild(newRtlBtn, rtlToggleBtn);
+      
+      newRtlBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isRtl = htmlElement.getAttribute('dir') === 'rtl';
+        const newDir = isRtl ? 'ltr' : 'rtl';
+        localStorage.setItem('dir', newDir);
+        applyRtl(newDir);
+      });
+    });
+
+  });
+</script>
+</body></html>

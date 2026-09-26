@@ -1,0 +1,859 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors": {
+  "on-secondary": "var(--color-on-secondary)",
+  "on-primary-fixed-variant": "var(--color-on-primary-fixed-variant)",
+  "on-primary-container": "var(--color-on-primary-container)",
+  "surface-bright": "var(--color-surface-bright)",
+  "error-container": "var(--color-error-container)",
+  "background": "var(--color-background)",
+  "inverse-on-surface": "var(--color-inverse-on-surface)",
+  "on-secondary-fixed": "var(--color-on-secondary-fixed)",
+  "on-surface": "var(--color-on-surface)",
+  "tertiary": "var(--color-tertiary)",
+  "on-secondary-fixed-variant": "var(--color-on-secondary-fixed-variant)",
+  "tertiary-fixed-dim": "var(--color-tertiary-fixed-dim)",
+  "tertiary-container": "var(--color-tertiary-container)",
+  "surface-container-low": "var(--color-surface-container-low)",
+  "secondary-fixed": "var(--color-secondary-fixed)",
+  "secondary-container": "var(--color-secondary-container)",
+  "surface-container-high": "var(--color-surface-container-high)",
+  "on-tertiary-fixed": "var(--color-on-tertiary-fixed)",
+  "on-error": "var(--color-on-error)",
+  "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+  "on-background": "var(--color-on-background)",
+  "surface-dim": "var(--color-surface-dim)",
+  "on-tertiary-fixed-variant": "var(--color-on-tertiary-fixed-variant)",
+  "primary-fixed": "var(--color-primary-fixed)",
+  "on-primary": "var(--color-on-primary)",
+  "outline": "var(--color-outline)",
+  "surface-container-lowest": "var(--color-surface-container-lowest)",
+  "on-surface-variant": "var(--color-on-surface-variant)",
+  "surface-variant": "var(--color-surface-variant)",
+  "on-primary-fixed": "var(--color-on-primary-fixed)",
+  "primary": "var(--color-primary)",
+  "surface-container-highest": "var(--color-surface-container-highest)",
+  "secondary": "var(--color-secondary)",
+  "tertiary-fixed": "var(--color-tertiary-fixed)",
+  "surface": "var(--color-surface)",
+  "inverse-primary": "var(--color-inverse-primary)",
+  "on-tertiary": "var(--color-on-tertiary)",
+  "error": "var(--color-error)",
+  "inverse-surface": "var(--color-inverse-surface)",
+  "on-secondary-container": "var(--color-on-secondary-container)",
+  "on-error-container": "var(--color-on-error-container)",
+  "surface-container": "var(--color-surface-container)",
+  "surface-tint": "var(--color-surface-tint)",
+  "secondary-fixed-dim": "var(--color-secondary-fixed-dim)",
+  "primary-container": "var(--color-primary-container)",
+  "outline-variant": "var(--color-outline-variant)",
+  "on-tertiary-container": "var(--color-on-tertiary-container)"
+},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-sm":"1rem","margin-lg":"5rem","gutter":"1.5rem","space-md":"1rem","gutter-lg":"2rem","margin-md":"3rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","margin":"1.5rem","space-xs":"0.25rem"},"fontFamily":{"label-code":["JetBrains Mono"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"body-md":["Inter"],"title-sm":["Plus Jakarta Sans"],"display-xl-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-lg":["Inter"],"display-xl":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"]},"fontSize":{"label-code":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"title-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"display-xl-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.025em","fontWeight":"800"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"display-xl":["64px",{"lineHeight":"72px","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script>  
+<link rel="icon" href="favicon.png" type="image/png"><link rel="apple-touch-icon" href="favicon.png"></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)]"><div class="h-20 max-w-[1440px] mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><a class="group flex items-center gap-3 relative" href="index.html"><div class="relative flex items-center justify-center"><div class="absolute -inset-1 rounded-full bg-primary/20 blur-md group-hover:bg-primary/40 transition-all"></div><div class="w-9 h-9 relative z-10"><img alt="ApexLabs Logo" class="w-full h-full object-contain rounded-xl" src="favicon.png"></div></div><span class="font-title-sm text-title-sm text-on-surface tracking-tight flex items-center gap-1.5">Apex <span class="text-primary">Labs</span><span class="font-label-code text-label-code px-1.5 py-0.5 rounded bg-surface-container-high text-primary border border-primary/30">v3.2</span></span></a></div><nav class="hidden xl:flex items-center gap-space-xs p-1 rounded-lg bg-surface-container-lowest/60 border border-outline-variant/20"><div class="relative group"><button type="button" class="flex items-center gap-1 px-3 py-2 rounded transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent" aria-haspopup="true"><span>Home</span><span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">expand_more</span></button><div class="absolute left-0 top-full w-64 hidden group-hover:block z-[100]"><div class="mt-1 rounded-xl bg-surface-container border border-outline-variant/40 shadow-2xl p-2 flex flex-col gap-1"><a class="flex flex-col p-2.5 rounded-lg hover:bg-surface-container-high transition-all text-left" href="index.html"><span class="font-semibold text-[13px] text-primary flex items-center justify-between">Home 1: App Development Agency<span class="material-symbols-outlined text-[14px]">arrow_forward</span></span><span class="text-[11px] text-on-surface-variant mt-0.5">Flagship agency engineering</span></a><a class="flex flex-col p-2.5 rounded-lg hover:bg-surface-container-high transition-all text-left" href="home-2.html"><span class="font-semibold text-[13px] text-on-surface flex items-center justify-between">Home 2: Startup &amp; MVP Studio<span class="material-symbols-outlined text-[14px]">arrow_forward</span></span><span class="text-[11px] text-on-surface-variant mt-0.5">Rapid venture MVP delivery</span></a></div></div></div><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent transition-all" href="services.html">Services</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent transition-all" href="portfolio.html">Portfolio</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent transition-all" href="process.html">Process</a><a class="px-3 py-2 rounded font-body-sm text-body-sm bg-surface-container-high text-primary font-semibold shadow-[0_0_16px_rgba(6,182,212,0.2)] border border-primary/30 transition-all" href="pricing.html">Pricing</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent transition-all" href="blog.html">Blog</a><a class="px-3 py-2 rounded font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high border border-transparent transition-all" href="contact.html">Contact</a></nav><div class="flex items-center gap-space-sm"><button aria-label="Toggle color mode" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 flex items-center justify-center transition-all" type="button"><span class="material-symbols-outlined text-[18px]">dark_mode</span></button><button aria-label="Toggle RTL mode" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 flex items-center justify-center transition-all" type="button" title="Toggle RTL"><span class="material-symbols-outlined text-[18px]">language</span></button><a class="hidden sm:flex items-center gap-1.5 px-3.5 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#">Client Portal</a><a class="inline-flex items-center justify-center px-4 py-2 rounded-lg font-title-sm text-body-sm bg-primary-container text-surface-container-lowest font-semibold shadow-[0_0_24px_rgba(6,182,212,0.35)] hover:bg-primary transition-all duration-200" href="#">Start a Project</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(76,215,246,0.4)] ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: ASYMMETRICAL ANGLED SPLIT HERO WITH PANORAMIC HOLOGRAPHIC CONSOLE -->
+<section class="relative w-full overflow-hidden pb-space-xl">
+<!-- Ambient Specular Glow Elements -->
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/15 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute top-1/3 -right-20 w-[420px] h-[420px] bg-secondary-container/20 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-gutter sm:px-margin-md lg:px-margin-lg pt-space-md sm:pt-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Left Editorial Architecture -->
+<div class="lg:col-span-6 flex flex-col gap-space-md z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high/90 border border-primary-container/30 w-fit">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-code text-label-code uppercase tracking-wider text-primary">GUARANTEED CAPACITY • ZERO RUNWAY WASTE</span>
+</div>
+<h1 class="font-display-xl text-display-xl-mobile sm:text-display-xl text-on-surface tracking-tight font-extrabold leading-none">
+            Predictable Pricing. <br>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-container to-secondary">Dedicated High-Velocity Pods.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            No fuzzy hours or billable bloat. Fixed-rate engineering pods embedded directly into your repo, committed to continuous production release and deterministic velocity.
+          </p>
+<!-- Metric Badges Row -->
+<div class="flex flex-wrap gap-2 pt-space-xs">
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-label-code text-label-code">Zero Overages Guarantee</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">lock_clock</span>
+<span class="font-label-code text-label-code">Hermetic Code Escrow</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span class="font-label-code text-label-code">2-Week Risk-Free Trial</span>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-sm">
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-headline-md text-body-md font-bold shadow-[0_0_32px_-6px_rgba(6,182,212,0.45)] transition-all transform hover:-translate-y-0.5" href="#pod-reserve">
+<span class="">Reserve a Pod Slot</span>
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</a>
+<button class="inline-flex items-center gap-2 px-5 py-3.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-headline-md text-body-md font-medium transition-colors" onclick="alert('Rate Card PDF generated: ApexLabs_Pod_Specs_2025.pdf dispatched to download buffer.')" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">download</span>
+<span class="">Download Rate Card (PDF)</span>
+</button>
+</div>
+<!-- Terminal Status Ticker -->
+<div class="mt-space-sm p-3 rounded-lg bg-surface-container-lowest/80 flex items-center justify-between font-label-code text-label-code text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-tertiary">POD TELEMETRY:</span>
+<span class="">18 Clusters Active</span>
+</div>
+<div class="text-primary hidden sm:block">Q2 RUNWAY RETENTION: 99.4%</div>
+</div>
+</div>
+<!-- Right Panoramic Holographic Console Visual -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-[0_24px_50px_rgba(0,0,0,0.6)]">
+<img alt="Futuristic dark tech agency pricing and engineering capacity visualization" class="w-full h-[460px] object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1Xvrm0-4VEGVmZu4sAnGzObmeqDAs6lckQDS2jfYTR4XdUrJydmqT8uPQmdm3CwPdRyCcCaik3f0Yv_43Bldjdh6VK3Cj3wv47PD739H_xBMPkdmCyIKQGhOU6t0CwbScOlR9bXbJaU54lCsebFCteKHzDfBjMdOAALqy9aBuq2LIfc5Z6Lk8VYVFXc3yHTjFf8RoopS0ndNmTvOdw9Fwvw0DFsbCj36eNeOjk3jjcwvuubwjUgPxEa0YRV">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-85"></div>
+<!-- Live Pod Status HUD Overlays -->
+<div class="absolute bottom-4 left-4 right-4 grid grid-cols-3 gap-2">
+<div class="p-3 rounded-xl bg-surface-container/90 backdrop-blur-md">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Active Pods</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">14/18</span>
+<span class="font-label-code text-[10px] text-tertiary block mt-0.5">77.7% ALLOCATED</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container/90 backdrop-blur-md">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Sprint Velocity</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">148 Pts</span>
+<span class="font-label-code text-[10px] text-primary block mt-0.5">+14% VS BENCHMARK</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container/90 backdrop-blur-md">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Next Available</span>
+<span class="font-headline-md text-headline-md font-bold text-secondary">Sprint 38</span>
+<span class="font-label-code text-[10px] text-on-surface block mt-0.5">MAY 05, 2025</span>
+</div>
+</div>
+<!-- Top Corner Cyber Tag -->
+<div class="absolute top-4 right-4 px-2.5 py-1 rounded-md bg-surface-container-highest/80 backdrop-blur-md flex items-center gap-1.5 font-label-code text-label-code text-primary">
+<span class="material-symbols-outlined text-[14px]">sensors</span>
+<span class="">LIVE CLUSTER DISPATCH</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: INTERACTIVE POD ARCHITECTURE TIER CARDS (STAGGERED HEIGHTS & GLOWS) -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto px-gutter sm:px-margin-md lg:px-margin-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-xl">
+<div class="flex flex-col gap-1">
+<span class="font-label-caps text-label-caps uppercase text-primary">ENGINEERING TOPOLOGY</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Three Calibrated Pod Models</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Self-contained cross-functional cells equipped with dedicated mobile engineers, QA automation pipelines, and hands-on systems architects.</p>
+</div>
+<div class="flex items-center gap-2 p-1 rounded-xl bg-surface-container-high w-fit">
+<span class="px-3 py-1 rounded-lg bg-surface-container-lowest font-label-code text-label-code text-on-surface font-semibold">MONTHLY RETAINER</span>
+<span class="px-3 py-1 font-label-code text-label-code text-on-surface-variant">PAUSE ANYTIME</span>
+</div>
+</div>
+<!-- 3-Column Staggered Cards Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter items-stretch">
+<!-- Pod 1: MVP Acceleration Pod -->
+<div class="flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-label-caps text-on-surface-variant uppercase">Seed &amp; Early-Stage</span>
+<span class="material-symbols-outlined text-primary text-[20px]">rocket_launch</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">MVP Acceleration Pod</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Rapid 0-to-1 prototype and investor-grade production rollouts for fast launch cadence.</p>
+</div>
+<div class="py-space-sm border-b border-surface-variant/40 flex items-baseline gap-1">
+<span class="font-display-xl text-headline-lg sm:text-display-xl font-bold text-on-surface">$18,500</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ month</span>
+</div>
+<!-- Pod Composition -->
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Dedicated Staffing Matrix</span>
+<div class="p-3 rounded-lg bg-surface-container flex flex-col gap-1.5 font-label-code text-label-code text-on-surface">
+<div class="flex items-center justify-between">
+<span class="">1x Senior Staff Architect</span>
+<span class="text-primary">100% Embedded</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="">2x Full-Stack Mobile Engineers</span>
+<span class="text-primary">Dedicated</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="">0.5x Dedicated QA Lead</span>
+<span class="text-on-surface-variant">Automated</span>
+</div>
+</div>
+</div>
+<!-- Deliverables -->
+<div class="flex flex-col gap-2.5 pt-space-xs font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">done</span>
+<span class="">Native Swift/Kotlin or Flutter core architecture</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">done</span>
+<span class="">Automated CI/CD fastlane repository setup</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">done</span>
+<span class="">App Store &amp; Google Play submission guarantee</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">done</span>
+<span class="">Weekly live staging testflight builds</span>
+</div>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full py-3 rounded-lg bg-surface-variant hover:bg-surface-bright text-on-surface font-headline-md text-body-md font-semibold text-center block transition-colors" href="#pod-reserve">
+              Deploy MVP Pod
+            </a>
+</div>
+</div>
+<!-- Pod 2: Scale & Modernization Pod (FEATURED / ELEVATED) -->
+<div class="relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-high shadow-[0_0_40px_-10px_rgba(6,182,212,0.35)] -mt-2 lg:-mt-4 mb-2 lg:mb-4 transition-all duration-300">
+<!-- Featured Badge -->
+<div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 px-3.5 py-1 rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider font-extrabold shadow-[0_0_16px_rgba(6,182,212,0.5)]">
+            MOST POPULAR FOR SERIES A-B
+          </div>
+<div class="flex flex-col gap-space-md pt-2">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-md bg-primary-container/20 font-label-caps text-label-caps text-primary uppercase font-bold">High Scale &amp; Tech Debt Overhaul</span>
+<span class="material-symbols-outlined text-primary-container text-[22px]">memory</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Scale &amp; Modernization Pod</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Refactoring legacy mobile monoliths, slashing frame drops, and shipping high-frequency features.</p>
+</div>
+<div class="py-space-sm border-b border-surface-variant/60 flex items-baseline gap-1">
+<span class="font-display-xl text-headline-lg sm:text-display-xl font-bold text-primary">$38,000</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ month</span>
+</div>
+<!-- Pod Composition -->
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps uppercase text-primary">Dedicated Staffing Matrix</span>
+<div class="p-3 rounded-lg bg-surface-container-lowest flex flex-col gap-1.5 font-label-code text-label-code text-on-surface">
+<div class="flex items-center justify-between">
+<span class="">1x Principal Architect</span>
+<span class="text-primary font-bold">100% Dedicated</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="">4x Senior Mobile Engineers</span>
+<span class="text-primary">iOS &amp; Android Dual</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="">1x Dedicated QA Automation Lead</span>
+<span class="text-tertiary">Real Device Farm</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="">0.5x DevOps SRE Lead</span>
+<span class="text-on-surface-variant">Cloud &amp; Pipeline</span>
+</div>
+</div>
+</div>
+<!-- Deliverables -->
+<div class="flex flex-col gap-2.5 pt-space-xs font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
+<span class="">Real silicon 120-device farm matrix testing</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
+<span class="">C++ JSI runtime optimization &amp; zero-lag rendering</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
+<span class="">99.98% crash-free session SLA contract guarantee</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
+<span class="">SOC2 Type II compliant build pipelines &amp; secret scanning</span>
+</div>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full py-3.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-headline-md text-body-md font-bold text-center block shadow-[0_0_24px_rgba(6,182,212,0.4)] transition-all" href="#pod-reserve">
+              Deploy Scale Pod
+            </a>
+</div>
+</div>
+<!-- Pod 3: Enterprise Core Pod -->
+<div class="flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-label-caps text-on-surface-variant uppercase">FinTech &amp; MedTech Enterprise</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">shield_lock</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Enterprise Core Pod</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Multi-team systemic scale, mission-critical offline security, and specialized hardware enclaves.</p>
+</div>
+<div class="py-space-sm border-b border-surface-variant/40 flex items-baseline gap-1">
+<span class="font-display-xl text-headline-lg sm:text-display-xl font-bold text-on-surface">$65,000</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ month</span>
+</div>
+<!-- Pod Composition -->
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Dedicated Staffing Matrix</span>
+<div class="p-3 rounded-lg bg-surface-container flex flex-col gap-1.5 font-label-code text-label-code text-on-surface">
+<div class="flex items-center justify-between">
+<span class="">2x Principal Systems Architects</span>
+<span class="text-secondary">Core Enclave</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="">6x Senior Staff Engineers</span>
+<span class="text-secondary">Cross-Functional</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="">2x Full-Time QA Automation</span>
+<span class="text-secondary">Custom Rack</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="">1x Certified Security Auditor</span>
+<span class="text-tertiary">Cryptographic Sync</span>
+</div>
+</div>
+</div>
+<!-- Deliverables -->
+<div class="flex flex-col gap-2.5 pt-space-xs font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">done</span>
+<span class="">On-device CoreML / Android NPU model deployment</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">done</span>
+<span class="">Cryptographic enclave hardware biometrics &amp; FIPS sync</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">done</span>
+<span class="">Bilateral IP transfer Day 1 with clear patent assignments</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">done</span>
+<span class="">24/7 dedicated incident response SLA with 15-min call bridge</span>
+</div>
+</div>
+</div>
+<div class="pt-space-lg">
+<a class="w-full py-3 rounded-lg bg-surface-variant hover:bg-surface-bright text-on-surface font-headline-md text-body-md font-semibold text-center block transition-colors" href="#pod-reserve">
+              Deploy Enterprise Pod
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: FEATURE & DELIVERABLES GRANULAR COMPARISON TABLE -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1440px] mx-auto px-gutter sm:px-margin-md lg:px-margin-lg">
+<div class="flex flex-col gap-1 mb-space-lg">
+<span class="font-label-caps text-label-caps uppercase text-primary">TECHNICAL SPEC SHEET</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Granular Deliverables Comparison</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">A direct matrix breakdown of service SLAs, device lab infrastructure, and security posture across pods.</p>
+</div>
+<!-- Modern Cyber Spec Table -->
+<div class="overflow-x-auto rounded-2xl bg-surface-container-low shadow-xl">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/80 font-label-caps text-label-caps uppercase text-on-surface-variant">
+<th class="py-4 px-6">Technical Dimension</th>
+<th class="py-4 px-6 text-on-surface">MVP Acceleration</th>
+<th class="py-4 px-6 text-primary font-bold">Scale &amp; Modernization</th>
+<th class="py-4 px-6 text-secondary">Enterprise Core</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y divide-surface-variant/30 text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-4 px-6 font-medium text-on-surface">
+                Engineering Velocity &amp; Cadence
+              </td>
+<td class="py-4 px-6 text-on-surface-variant font-label-code text-label-code">Bi-Weekly Sprints</td>
+<td class="py-4 px-6 text-primary font-label-code text-label-code font-semibold">Weekly Production Tags</td>
+<td class="py-4 px-6 text-secondary font-label-code text-label-code">Daily Continuous CD Ship</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-4 px-6 font-medium text-on-surface">
+                Code Reviews &amp; Sign-off
+              </td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1 font-label-code text-label-code text-tertiary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                  Senior Staff Sign-off
+                </span>
+</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1 font-label-code text-label-code text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                  Dual Principal Architect PRs
+                </span>
+</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center gap-1 font-label-code text-label-code text-secondary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                  Security + Architect Dual Sign-off
+                </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-4 px-6 font-medium text-on-surface">
+                Silicon QA Farm Testing
+              </td>
+<td class="py-4 px-6 text-on-surface-variant font-body-sm text-body-sm">Standard Cloud Simulator Grid</td>
+<td class="py-4 px-6 text-on-surface font-body-sm text-body-sm">120+ Real Silicon Physical Device Lab</td>
+<td class="py-4 px-6 text-on-surface font-body-sm text-body-sm">Dedicated Private Isolated Hardware Rack</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-4 px-6 font-medium text-on-surface">
+                SLA Guarantees
+              </td>
+<td class="py-4 px-6 font-label-code text-label-code text-on-surface-variant">99.5% Build Uptime</td>
+<td class="py-4 px-6 font-label-code text-label-code text-primary font-bold">99.98% Crash-Free SLA</td>
+<td class="py-4 px-6 font-label-code text-label-code text-secondary font-bold">Custom Regulatory 99.999% SLA</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-4 px-6 font-medium text-on-surface">
+                IP Assignment
+              </td>
+<td class="py-4 px-6 text-tertiary font-label-code text-label-code">Immediate Bilateral Transfer</td>
+<td class="py-4 px-6 text-tertiary font-label-code text-label-code font-semibold">Immediate Bilateral Transfer</td>
+<td class="py-4 px-6 text-tertiary font-label-code text-label-code">Immediate Bilateral Transfer + Patent Escrow</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-4 px-6 font-medium text-on-surface">
+                Linear &amp; Slack Channel Sync
+              </td>
+<td class="py-4 px-6 text-on-surface-variant">Shared Slack Connect</td>
+<td class="py-4 px-6 text-primary">Direct Architect Slack + Linear Sync</td>
+<td class="py-4 px-6 text-secondary">Synchronous Live War Room &amp; Dual Auth</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- SECTION 4: ENTERPRISE ROI & RUNWAY PRESERVATION STUDIO -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto px-gutter sm:px-margin-md lg:px-margin-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Left Visual Side: Executive ROI Meeting Photo -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl bg-surface-container-low">
+<img alt="Futuristic dark tech agency pricing and engineering capacity visualization" class="w-full h-[460px] object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1Xvrm0-4VEGVmZu4sAnGzObmeqDAs6lckQDS2jfYTR4XdUrJydmqT8uPQmdm3CwPdRyCcCaik3f0Yv_43Bldjdh6VK3Cj3wv47PD739H_xBMPkdmCyIKQGhOU6t0CwbScOlR9bXbJaU54lCsebFCteKHzDfBjMdOAALqy9aBuq2LIfc5Z6Lk8VYVFXc3yHTjFf8RoopS0ndNmTvOdw9Fwvw0DFsbCj36eNeOjk3jjcwvuubwjUgPxEa0YRV">
+<!-- Floating Holographic Badge -->
+<div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-surface-dim/90 backdrop-blur-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">trending_up</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant block">Audited Runway Impact</span>
+<span class="font-headline-md text-headline-md font-bold text-tertiary">+7.4 Months</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-code text-label-code text-on-surface-variant block">VC BENCHMARK</span>
+<span class="font-label-code text-label-code text-on-surface">CYBERNETIC VENTURES</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Hard Economic Benchmarks -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider">CAPITAL EFFICIENCY AUDIT</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+            Why Dedicated Pods Outperform Traditional IT Contracting
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Recruiting internal teams takes 4 to 6 months while consuming $45k+ in placement fees per hire. Staff augmentation bodies lack architectural cohesion. ApexLabs pods hit the ground running with pre-built shared runtime harnesses.
+          </p>
+<!-- 3 ROI Benchmark Cards -->
+<div class="flex flex-col gap-3 pt-space-xs">
+<div class="p-4 rounded-xl bg-surface-container flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-primary-container/20 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+<div>
+<h4 class="font-headline-md text-title-sm font-bold text-on-surface">+3.2x Sprint Throughput</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Benchmarked against conventional offshore staffing vendors due to our synchronized zero-friction continuous deployment pipeline.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-tertiary-container/20 flex items-center justify-center shrink-0 text-tertiary">
+<span class="material-symbols-outlined text-[24px]">timer_off</span>
+</div>
+<div>
+<h4 class="font-headline-md text-title-sm font-bold text-on-surface">Zero Recruiter Fees &amp; Zero Ramp-up Latency</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pod commits start within 5 business days of mutual NDA execution. No headhunting delays, no stock grant paperwork, no onboarding drag.</p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/30 flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[24px]">savings</span>
+</div>
+<div>
+<h4 class="font-headline-md text-title-sm font-bold text-on-surface">-64% Net Total Cost of Ownership</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Calculated over a 12-month lifecycle by avoiding rewrite cycles, unmaintainable junior code debt, and flaky build toolchains.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: FLEXIBLE ENGAGEMENT ADD-ONS & MICRO-SPRINTS (4-CARD GRID) -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1440px] mx-auto px-gutter sm:px-margin-md lg:px-margin-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-primary">MODULAR SPECIALIZATION</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Modular Add-ons &amp; Target Micro-Sprints</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Plug targeted specialized capabilities directly into your primary pod without contract restructuring.</p>
+</div>
+<!-- 4 Horizontal Compact Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Addon 1 -->
+<div class="p-5 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">troubleshoot</span>
+</span>
+<span class="font-label-code text-label-code text-on-surface-variant">5 DAYS</span>
+</div>
+<h4 class="font-headline-md text-title-sm font-bold text-on-surface">Sprint Zero Architecture Audit</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Deep code inspection, frame-drop profiling, memory leak detection, and security posture score.</p>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant/30 flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md font-bold text-primary">$6,500</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">One-Time</span>
+</div>
+</div>
+<!-- Addon 2 -->
+<div class="p-5 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="w-8 h-8 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+</span>
+<span class="font-label-code text-label-code text-tertiary">EXPEDITED</span>
+</div>
+<h4 class="font-headline-md text-title-sm font-bold text-on-surface">App Store Launch &amp; Review</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Apple &amp; Google guidelines audit, privacy manifest prep, and rejection resolution escalation.</p>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant/30 flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md font-bold text-tertiary">$3,500</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">One-Time</span>
+</div>
+</div>
+<!-- Addon 3 -->
+<div class="p-5 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="w-8 h-8 rounded-lg bg-secondary/15 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+</span>
+<span class="font-label-code text-label-code text-secondary">NPU / LLM</span>
+</div>
+<h4 class="font-headline-md text-title-sm font-bold text-on-surface">On-Device AI Quantization</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Quantize 3B-7B parameter LLMs to 4-bit INT8 for on-device Apple Neural Engine execution.</p>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant/30 flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md font-bold text-secondary">$9,000</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">One-Time</span>
+</div>
+</div>
+<!-- Addon 4 -->
+<div class="p-5 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</span>
+<span class="font-label-code text-label-code text-primary">24/7/365</span>
+</div>
+<h4 class="font-headline-md text-title-sm font-bold text-on-surface">Dedicated SRE &amp; Incident SLA</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Sub-15 minute triage guarantee for mission-critical enterprise production applications.</p>
+</div>
+<div class="pt-4 mt-4 border-t border-surface-variant/30 flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">$4,200</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">/ Month</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: POD CAPACITY RESERVATION & INTAKE TERMINAL -->
+<section class="w-full py-space-xl bg-surface-container-lowest" id="pod-reserve">
+<div class="max-w-[1080px] mx-auto px-gutter sm:px-margin-md">
+<div class="p-6 sm:p-10 rounded-3xl bg-surface-container-high/90 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<!-- Header & Real-Time Capacity Visual Bar -->
+<div class="flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider">DEPLOYMENT TERMINAL</span>
+<h3 class="font-headline-lg text-headline-md sm:text-headline-lg font-bold text-on-surface">Q2 Engineering Capacity: 3 Pod Slots Remaining</h3>
+</div>
+<div class="px-3 py-1 rounded-md bg-tertiary/10 text-tertiary font-label-code text-label-code font-bold w-fit">
+              LIVE ALLOCATION: 83%
+            </div>
+</div>
+<!-- Capacity Bar Graphic -->
+<div class="w-full bg-surface-container-lowest h-3 rounded-full overflow-hidden flex">
+<div class="bg-gradient-to-r from-primary via-primary-container to-secondary h-full rounded-full transition-all duration-1000" style="width: 83%"></div>
+</div>
+</div>
+<!-- Interactive Chip Selection -->
+<div class="mt-space-lg flex flex-col gap-3">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Target Pod Kick-off Window</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="chip-group">
+<button class="pod-chip p-3 rounded-xl bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold text-center transition-all" onclick="selectChip(this)" type="button">
+              Immediate (Within 7 Days)
+            </button>
+<button class="pod-chip p-3 rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium text-center transition-all" onclick="selectChip(this)" type="button">
+              Within 30 Days
+            </button>
+<button class="pod-chip p-3 rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium text-center transition-all" onclick="selectChip(this)" type="button">
+              Next Quarter (Q3)
+            </button>
+</div>
+</div>
+<!-- Intake Form Submission -->
+<form class="mt-space-md flex flex-col sm:flex-row gap-3" onsubmit="handleReserve(event)">
+<div class="relative flex-grow">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">mail</span>
+<input class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-surface-container-lowest font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="vp-engineering@enterprise.com" required="" type="email">
+</div>
+<button class="px-8 py-3.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-headline-md text-body-md font-bold shrink-0 shadow-[0_0_24px_rgba(6,182,212,0.4)] transition-all flex items-center justify-center gap-2" type="submit">
+<span class="">Lock In Pod Rate</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</form>
+<div class="hidden mt-4 p-3 rounded-xl bg-tertiary-container/20 text-tertiary font-label-code text-label-code text-center" id="intake-confirmation">
+          Capacity slot locked. Dedicated Staff Architect schedule dispatched to email.
+        </div>
+<!-- Assurance Micro-Copy -->
+<div class="mt-space-md pt-space-sm border-t border-surface-variant/30 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-label-code text-label-code text-on-surface-variant text-center">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary">verified</span>
+            100% Mutual NDA before code disclosure
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary">verified</span>
+            14-day risk-free transition guarantee
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary">verified</span>
+            No long-term lock-in
+          </span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function selectChip(el) {
+    document.querySelectorAll('.pod-chip').forEach(function(chip) {
+      chip.className = 'pod-chip p-3 rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-medium text-center transition-all';
+    });
+    el.className = 'pod-chip p-3 rounded-xl bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold text-center transition-all shadow-[0_0_16px_rgba(6,182,212,0.3)]';
+  }
+
+  function handleReserve(e) {
+    e.preventDefault();
+    var confirmation = document.getElementById('intake-confirmation');
+    if (confirmation) {
+      confirmation.classList.remove('hidden');
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 pt-space-xl pb-space-lg text-on-surface-variant"><div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-xl border-b border-outline-variant/20"><div class="lg:col-span-4 flex flex-col gap-space-md"><a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity group"><div class="relative flex items-center justify-center"><div class="absolute -inset-1 rounded-full bg-primary/20 blur-md group-hover:bg-primary/40 transition-all"></div><div class="w-9 h-9 relative z-10"><img alt="ApexLabs Logo" class="w-full h-full object-contain rounded-xl" src="favicon.png"></div></div><span class="font-title-sm text-title-sm text-on-surface tracking-tight">Apex <span class="text-primary">Labs</span></span></a><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Engineering mission-critical iOS, Android, and cross-platform applications with world-class product craftsmanship.</p><div class="flex items-center gap-space-sm"><a aria-label="ApexLabs GitHub" class="group relative w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] hover:-translate-y-0.5" href="https://github.com" rel="noopener" target="_blank"><svg class="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewbox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg></a><a aria-label="ApexLabs LinkedIn" class="group relative w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] hover:-translate-y-0.5" href="https://linkedin.com" rel="noopener" target="_blank"><svg class="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.778-.773 1.778-1.729V1.73C24 .774 23.205 0 22.222 0h.003z"></path></svg></a><a aria-label="ApexLabs X Twitter" class="group relative w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] hover:-translate-y-0.5" href="https://twitter.com" rel="noopener" target="_blank"><svg class="w-4 h-4 fill-current transition-transform duration-200 group-hover:scale-110" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a><a aria-label="ApexLabs Discord" class="group relative w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] hover:-translate-y-0.5" href="https://discord.com" rel="noopener" target="_blank"><svg class="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewbox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.894.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg></a><a aria-label="ApexLabs Dribbble" class="group relative w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-primary border border-outline-variant/30 hover:border-primary/50 flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] hover:-translate-y-0.5" href="https://dribbble.com" rel="noopener" target="_blank"><svg class="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewbox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm9.73 10.45c-.347-.03-2.617-.209-5.18.847-.13-.292-.266-.583-.41-.872 3.125-1.574 4.364-3.328 4.492-3.522 1.481 1.77 2.378 4.025 2.378 6.486 0 .39-.033.774-.08 1.152-.397-1.636-.889-3.23-1.2-4.091zM12 2.222c2.614 0 5.006 1.025 6.776 2.69-.17.243-1.328 1.83-4.323 3.25-1.428-2.584-3.036-4.9-3.226-5.176.25-.015.512-.023.773-.023v-.741zm-3.09 1.134c.184.26 1.758 2.531 3.197 5.08-3.957 1.164-7.514 1.205-8.082 1.205-.008-.21-.013-.42-.013-.632 0-2.67 1.135-5.08 2.96-6.792.65-.598 1.304-1.04 1.938-1.341v1.48zm-6.666 8.644c0-.135.008-.27.016-.404.535.007 4.542.023 8.877-1.334.306.63.593 1.272.859 1.92-5.184 1.573-7.585 5.584-7.72 5.823A9.742 9.742 0 012.244 12zm9.756 9.778c-2.484 0-4.757-.932-6.491-2.469.176-.328 2.072-3.665 7.42-5.182 1.173 3.076 1.666 5.882 1.778 6.586-.848.7-1.87 1.065-2.707 1.065zm4.819-2.295c-.13-.733-.61-3.33-1.745-6.287 2.39-.99 4.417-.833 4.75-.802-.455 3.013-2.28 5.612-4.887 7.089h2.082z"></path></svg></a></div><div class="flex items-center gap-space-sm pt-space-xs"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant/40"><span class="material-symbols-outlined text-[14px] text-tertiary">verified_user</span><span class="font-label-code text-label-code text-on-surface">SOC2 Type II</span></div><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant/40"><span class="material-symbols-outlined text-[14px] text-tertiary">lock</span><span class="font-label-code text-label-code text-on-surface">ISO 27001 Certified</span></div></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><div class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Services</div><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class="hover:text-primary transition-colors"><a class="" href="services.html">iOS Native (SwiftUI)</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">Android (Jetpack Compose)</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">Cross-Platform (React Native)</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">Flutter Enterprise</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">Cloud &amp; Microservices</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">AI/ML On-Device (CoreML)</a></li><li class="hover:text-primary transition-colors"><a class="" href="services.html">App Modernization</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><div class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Solutions</div><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">FinTech &amp; Banking</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">HealthTech &amp; Telehealth</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">Logistics &amp; Connected IoT</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">Web3 &amp; Crypto Wallets</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">SaaS Mobile Companions</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">Enterprise Field Ops</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><div class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Company</div><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class="hover:text-primary transition-colors"><a class="" href="process.html">About Us</a></li><li class="hover:text-primary transition-colors"><a class="" href="portfolio.html">Case Studies</a></li><li class="hover:text-primary transition-colors"><a class="" href="process.html">Engineering Process</a></li><li class="hover:text-primary transition-colors"><a class="" href="blog.html">Open Source</a></li><li class="hover:text-primary transition-colors flex items-center gap-1.5"><a class="" href="contact.html">Careers</a><span class="font-label-caps text-[9px] px-1.5 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary border border-tertiary/30">Hiring</span></li><li class="hover:text-primary transition-colors"><a class="" href="blog.html">Tech Blog</a></li><li class="hover:text-primary transition-colors"><a class="" href="contact.html">Security &amp; Compliance</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><div class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Global Hubs</div><div class="flex flex-col gap-2 font-body-sm text-body-sm"><p class=""><strong class="text-on-surface">San Francisco:</strong> 500 Howard St, SOMA</p><p class=""><strong class="text-on-surface">London:</strong> 100 Bishopsgate, EC2N</p><p class=""><strong class="text-on-surface">Tokyo:</strong> Roppongi Hills Mori Tower</p><p class="pt-1"><a class="text-primary hover:underline" href="mailto:hello@apexlabs.dev">hello@apexlabs.dev</a></p></div><div class="pt-space-xs"><div class="font-label-caps text-label-caps uppercase text-on-surface mb-2">Stay Ahead</div><form class="flex items-center gap-1"><input class="w-full px-2.5 py-1.5 text-body-sm bg-surface-container-low border border-outline-variant/50 rounded text-on-surface focus:outline-none focus:border-primary" placeholder="developer@domain.com" type="email"/><button aria-label="Subscribe" class="px-2.5 py-1.5 bg-primary-container text-surface-container-lowest rounded hover:bg-primary transition-colors flex items-center justify-center" type="submit"><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button></form></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm"><p class="">© 2025 ApexLabs Studio Inc. All rights reserved.</p><div class="flex flex-wrap items-center gap-space-md"><span class="">Privacy Policy</span><span class="">•</span><span class="">Terms of Service</span><span class="">•</span><span class="">Security Status</span><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low border border-outline-variant/30 font-label-code text-label-code text-on-surface"><span class="material-symbols-outlined text-[14px] text-primary">language</span><span class="">EN / US (LTR)</span></div></div></div></div></footer>
+
+
+
+<style>
+:root {
+  --color-on-secondary: #3c0091;
+  --color-on-primary-fixed-variant: #004e5c;
+  --color-on-primary-container: #00424f;
+  --color-surface-bright: #ffffff;
+  --color-error-container: #93000a;
+  --color-background: #ffffff;
+  --color-inverse-on-surface: #f8fafc;
+  --color-on-secondary-fixed: #23005c;
+  --color-on-surface: #0f172a;
+  --color-tertiary: #4edea3;
+  --color-on-secondary-fixed-variant: #5516be;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-tertiary-container: #1bbd85;
+  --color-surface-container-low: #f8fafc;
+  --color-secondary-fixed: #e9ddff;
+  --color-secondary-container: #571bc1;
+  --color-surface-container-high: #e2e8f0;
+  --color-on-tertiary-fixed: #002113;
+  --color-on-error: #690005;
+  --color-primary-fixed-dim: #4cd7f6;
+  --color-on-background: #0f172a;
+  --color-surface-dim: #f1f5f9;
+  --color-on-tertiary-fixed-variant: #005236;
+  --color-primary-fixed: #acedff;
+  --color-on-primary: #003640;
+  --color-outline: #94a3b8;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface-variant: #334155;
+  --color-surface-variant: #e2e8f0;
+  --color-on-primary-fixed: #001f26;
+  --color-primary: #4cd7f6;
+  --color-surface-container-highest: #cbd5e1;
+  --color-secondary: #d0bcff;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-surface: #f8fafc;
+  --color-inverse-primary: #00687a;
+  --color-on-tertiary: #003824;
+  --color-error: #ffb4ab;
+  --color-inverse-surface: #1e293b;
+  --color-on-secondary-container: #c4abff;
+  --color-on-error-container: #ffdad6;
+  --color-surface-container: #f1f5f9;
+  --color-surface-tint: #4cd7f6;
+  --color-secondary-fixed-dim: #d0bcff;
+  --color-primary-container: #06b6d4;
+  --color-outline-variant: #cbd5e1;
+  --color-on-tertiary-container: #00452e;
+}
+.dark {
+  --color-on-secondary: #3c0091;
+  --color-on-primary-fixed-variant: #004e5c;
+  --color-on-primary-container: #00424f;
+  --color-surface-bright: #353944;
+  --color-error-container: #93000a;
+  --color-background: #0f131d;
+  --color-inverse-on-surface: #2c303b;
+  --color-on-secondary-fixed: #23005c;
+  --color-on-surface: #dfe2f1;
+  --color-tertiary: #4edea3;
+  --color-on-secondary-fixed-variant: #5516be;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-tertiary-container: #1bbd85;
+  --color-surface-container-low: #171b26;
+  --color-secondary-fixed: #e9ddff;
+  --color-secondary-container: #571bc1;
+  --color-surface-container-high: #262a35;
+  --color-on-tertiary-fixed: #002113;
+  --color-on-error: #690005;
+  --color-primary-fixed-dim: #4cd7f6;
+  --color-on-background: #dfe2f1;
+  --color-surface-dim: #0f131d;
+  --color-on-tertiary-fixed-variant: #005236;
+  --color-primary-fixed: #acedff;
+  --color-on-primary: #003640;
+  --color-outline: #869397;
+  --color-surface-container-lowest: #0a0e18;
+  --color-on-surface-variant: #bcc9cd;
+  --color-surface-variant: #313540;
+  --color-on-primary-fixed: #001f26;
+  --color-primary: #4cd7f6;
+  --color-surface-container-highest: #313540;
+  --color-secondary: #d0bcff;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-surface: #0f131d;
+  --color-inverse-primary: #00687a;
+  --color-on-tertiary: #003824;
+  --color-error: #ffb4ab;
+  --color-inverse-surface: #dfe2f1;
+  --color-on-secondary-container: #c4abff;
+  --color-on-error-container: #ffdad6;
+  --color-surface-container: #1c1f2a;
+  --color-surface-tint: #4cd7f6;
+  --color-secondary-fixed-dim: #d0bcff;
+  --color-primary-container: #06b6d4;
+  --color-outline-variant: #3d494c;
+  --color-on-tertiary-container: #00452e;
+}
+
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const htmlElement = document.documentElement;
+    // Check localStorage
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    
+    const applyTheme = (theme) => {
+      if (theme === 'dark') {
+        htmlElement.classList.add('dark');
+      } else {
+        htmlElement.classList.remove('dark');
+      }
+      
+      // Update icons
+      const currentBtns = document.querySelectorAll('button[aria-label="Toggle color mode"]');
+      currentBtns.forEach(btn => {
+        const iconSpan = btn.querySelector('.material-symbols-outlined');
+        if (iconSpan) {
+          iconSpan.textContent = theme === 'dark' ? 'dark_mode' : 'light_mode';
+        }
+      });
+    };
+    
+    applyTheme(savedTheme);
+    
+    // Bind events
+    const themeToggleBtns = document.querySelectorAll('button[aria-label="Toggle color mode"]');
+    themeToggleBtns.forEach(themeToggleBtn => {
+      // Remove any existing click listeners by cloning
+      const newBtn = themeToggleBtn.cloneNode(true);
+      themeToggleBtn.parentNode.replaceChild(newBtn, themeToggleBtn);
+      
+      newBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isDark = htmlElement.classList.contains('dark');
+        const newTheme = isDark ? 'light' : 'dark';
+        localStorage.setItem('theme', newTheme);
+        applyTheme(newTheme);
+      });
+    });
+    // RTL logic
+    const savedDir = localStorage.getItem('dir') || 'ltr';
+    const applyRtl = (dir) => {
+      if (dir === 'rtl') {
+        htmlElement.setAttribute('dir', 'rtl');
+      } else {
+        htmlElement.removeAttribute('dir');
+      }
+      
+      const rtlBtns = document.querySelectorAll('button[aria-label="Toggle RTL mode"]');
+      rtlBtns.forEach(btn => {
+        const iconSpan = btn.querySelector('.material-symbols-outlined');
+        if (iconSpan) {
+          iconSpan.textContent = dir === 'rtl' ? 'format_textdirection_l_to_r' : 'language';
+        }
+      });
+    };
+    
+    applyRtl(savedDir);
+    
+    const rtlToggleBtns = document.querySelectorAll('button[aria-label="Toggle RTL mode"]');
+    rtlToggleBtns.forEach(rtlToggleBtn => {
+      const newRtlBtn = rtlToggleBtn.cloneNode(true);
+      rtlToggleBtn.parentNode.replaceChild(newRtlBtn, rtlToggleBtn);
+      
+      newRtlBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isRtl = htmlElement.getAttribute('dir') === 'rtl';
+        const newDir = isRtl ? 'ltr' : 'rtl';
+        localStorage.setItem('dir', newDir);
+        applyRtl(newDir);
+      });
+    });
+
+  });
+</script>
+</body></html>
